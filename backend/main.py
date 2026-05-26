@@ -4,7 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from elasticsearch import Elasticsearch
 from dotenv import load_dotenv
 from pydantic import BaseModel
-from services.gemini.ai_service import generate_elastic_query, generate_player_insights
+from services.gemini.ai_service import generate_elastic_query, generate_player_insights, generate_counter_strategy
+from typing import List as PyList
 
 load_dotenv()
 
@@ -36,7 +37,7 @@ def read_root():
     return {"status": "ok", "message": "Third Man API is running"}
 
 @app.get("/api/players")
-def get_players(role: str = None, limit: int = 100):
+def get_players(role: str = None, limit: int = 500):
     if not es:
         raise HTTPException(status_code=503, detail="Elasticsearch connection not configured")
         
@@ -48,6 +49,39 @@ def get_players(role: str = None, limit: int = 100):
         res = es.search(index=INDEX_NAME, query=query, size=limit)
         players = [hit["_source"] for hit in res["hits"]["hits"]]
         return {"total": res["hits"]["total"]["value"], "players": players}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/teams")
+def get_teams():
+    """Return all unique team codes in the index."""
+    if not es:
+        raise HTTPException(status_code=503, detail="Elasticsearch connection not configured")
+    try:
+        res = es.search(
+            index=INDEX_NAME,
+            size=0,
+            aggs={"teams": {"terms": {"field": "team", "size": 50}}}
+        )
+        teams = [bucket["key"] for bucket in res["aggregations"]["teams"]["buckets"]]
+        return {"teams": sorted(teams)}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/players/team/{team}")
+def get_players_by_team(team: str):
+    """Return all players for a given team code."""
+    if not es:
+        raise HTTPException(status_code=503, detail="Elasticsearch connection not configured")
+    try:
+        res = es.search(
+            index=INDEX_NAME,
+            query={"term": {"team": team}},
+            size=200,
+            sort=[{"rating": {"order": "desc"}}]
+        )
+        players = [hit["_source"] for hit in res["hits"]["hits"]]
+        return {"team": team, "total": len(players), "players": players}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -124,6 +158,7 @@ def get_role_distribution():
 
 class ChatRequest(BaseModel):
     query: str
+    module: str = "scout"
 
 @app.post("/api/chat")
 def chat_with_ai(request: ChatRequest):
@@ -155,7 +190,7 @@ def chat_with_ai(request: ChatRequest):
         res = es.search(**search_kwargs)
         players = [hit["_source"] for hit in res["hits"]["hits"]]
         
-        insight_data = generate_player_insights(request.query, players)
+        insight_data = generate_player_insights(request.query, players, request.module)
         ai_response["insights"] = insight_data.get("insights", "")
         ai_response["actions"] = insight_data.get("actions", [])
         
@@ -163,5 +198,17 @@ def chat_with_ai(request: ChatRequest):
             "ai": ai_response,
             "players": players
         }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+class CounterRequest(BaseModel):
+    threat: dict
+    home_squad: PyList[dict]
+
+@app.post("/api/tactics/counter")
+def counter_strategy(request: CounterRequest):
+    try:
+        result = generate_counter_strategy(request.threat, request.home_squad)
+        return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

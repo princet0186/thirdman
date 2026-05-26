@@ -1,7 +1,7 @@
 "use client";
 
 import { Sparkles, Terminal, ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAppContext } from "@/lib/AppContext";
 
 interface AIResponse {
@@ -15,7 +15,15 @@ export default function AIPanel() {
   const [query, setQuery] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [response, setResponse] = useState<AIResponse | null>(null);
-  const { setSelectedPlayer, setPlayers, players } = useAppContext();
+  const { setSelectedPlayer, setPlayers, players, currentModule, pendingQuery, setPendingQuery } = useAppContext();
+
+  useEffect(() => {
+    if (pendingQuery) {
+      setQuery(pendingQuery);
+      handleQuery(pendingQuery);
+      setPendingQuery(null);
+    }
+  }, [pendingQuery]);
 
   const handleInsightsClick = (e: React.MouseEvent<HTMLDivElement>) => {
     const target = e.target as HTMLElement;
@@ -42,7 +50,7 @@ export default function AIPanel() {
       const res = await fetch("http://localhost:8000/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: queryToRun }),
+        body: JSON.stringify({ query: queryToRun, module: currentModule }),
       });
       const data = await res.json();
       setResponse(data.ai);

@@ -37,6 +37,21 @@ interface AppContextValue {
 
   commandPaletteOpen: boolean;
   setCommandPaletteOpen: (open: boolean) => void;
+
+  pendingQuery: string | null;
+  setPendingQuery: (query: string | null) => void;
+
+  homeTeam: string;
+  setHomeTeam: (team: string) => void;
+
+  recencyBias: number;
+  setRecencyBias: (bias: number) => void;
+
+  metricWeight: "balanced" | "avg_focused" | "sr_focused";
+  setMetricWeight: (weight: "balanced" | "avg_focused" | "sr_focused") => void;
+
+  injuryThresholds: { green: number; amber: number };
+  setInjuryThresholds: (thresholds: { green: number; amber: number }) => void;
 }
 
 
@@ -57,6 +72,12 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [currentModule, setCurrentModule] = useState<Module>("scout");
   const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
+  const [pendingQuery, setPendingQuery] = useState<string | null>(null);
+  
+  const [homeTeam, setHomeTeam] = useState("IND");
+  const [recencyBias, setRecencyBias] = useState(50);
+  const [metricWeight, setMetricWeight] = useState<"balanced" | "avg_focused" | "sr_focused">("balanced");
+  const [injuryThresholds, setInjuryThresholds] = useState({ green: 30, amber: 55 });
 
   const setActiveDataset = useCallback((dataset: string) => {
     setIsRefreshing(true);
@@ -78,6 +99,16 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         setCurrentModule,
         commandPaletteOpen,
         setCommandPaletteOpen,
+        pendingQuery,
+        setPendingQuery,
+        homeTeam,
+        setHomeTeam,
+        recencyBias,
+        setRecencyBias,
+        metricWeight,
+        setMetricWeight,
+        injuryThresholds,
+        setInjuryThresholds,
       }}
     >
       {children}

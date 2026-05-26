@@ -43,7 +43,7 @@ export default function NavigationRail() {
       </nav>
 
       <div className="mt-auto w-full flex flex-col gap-2 items-center border-t border-[#14532d] pt-4">
-        <Link href="#" className="w-8 h-8 flex items-center justify-center text-[#86efac] hover:text-white rounded-sm hover:bg-[#14532d]">
+        <Link href="/settings" className="w-8 h-8 flex items-center justify-center text-[#86efac] hover:text-white rounded-sm hover:bg-[#14532d]">
           <Settings className="w-4 h-4" />
         </Link>
       </div>
