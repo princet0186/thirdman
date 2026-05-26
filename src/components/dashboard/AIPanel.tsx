@@ -1,20 +1,43 @@
 "use client";
 
 import { Sparkles, Terminal, ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAppContext } from "@/lib/AppContext";
 
 interface AIResponse {
   reasoning: string;
   steps: string[];
   actions: string[];
+  insights?: string;
 }
 
 export default function AIPanel() {
   const [query, setQuery] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [response, setResponse] = useState<AIResponse | null>(null);
-  const { setSelectedPlayer, setPlayers } = useAppContext();
+  const { setSelectedPlayer, setPlayers, players, currentModule, pendingQuery, setPendingQuery } = useAppContext();
+
+  useEffect(() => {
+    if (pendingQuery) {
+      setQuery(pendingQuery);
+      handleQuery(pendingQuery);
+      setPendingQuery(null);
+    }
+  }, [pendingQuery]);
+
+  const handleInsightsClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLElement;
+    if (target.tagName.toLowerCase() === "b") {
+      const clickedName = target.innerText.trim().toLowerCase();
+      const matchedPlayer = players.find(p => 
+        p.name.toLowerCase().includes(clickedName) || 
+        clickedName.includes(p.name.toLowerCase())
+      );
+      if (matchedPlayer) {
+        setSelectedPlayer(matchedPlayer);
+      }
+    }
+  };
 
   const handleQuery = async (overrideQuery?: string) => {
     const queryToRun = overrideQuery || query;
@@ -27,13 +50,11 @@ export default function AIPanel() {
       const res = await fetch("http://localhost:8000/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: queryToRun }),
+        body: JSON.stringify({ query: queryToRun, module: currentModule }),
       });
       const data = await res.json();
       setResponse(data.ai);
       
-      
-      // Update global players list and select first one
       if (data.players && data.players.length > 0) {
         setPlayers(data.players);
         setSelectedPlayer(data.players[0]);
@@ -49,62 +70,56 @@ export default function AIPanel() {
   };
 
   return (
-    <div className="flex flex-col h-full bg-[#f8fafc]">
-      <div className="h-8 border-b border-[#cbd5e1] bg-white flex items-center px-3 justify-between">
+    <div className="flex flex-col h-full bg-[#faf8f3]">
+      <div className="h-8 border-b-2 border-[#ca8a04] bg-gradient-to-r from-[#14532d] to-[#166534] flex items-center px-3 justify-between">
         <div className="flex items-center gap-1.5">
-          <Sparkles className="w-3.5 h-3.5 text-[#3b82f6]" />
-          <span className="text-xs font-semibold text-[#0f172a] uppercase tracking-wider">Agent Builder</span>
+          <Sparkles className="w-3.5 h-3.5 text-[#ca8a04]" />
+          <span className="text-xs font-semibold text-white uppercase tracking-wider">Agent Builder</span>
         </div>
-        <span className="text-[10px] font-mono text-[#16a34a] bg-[#dcfce7] px-1.5 rounded-sm">ONLINE</span>
+        <div className="flex items-center gap-2">
+          <span className="text-[10px] font-mono text-[#22c55e] bg-[#052e16] px-1.5 rounded-sm border border-[#166534]">ONLINE</span>
+        </div>
       </div>
 
       <div className="flex-1 overflow-y-auto p-3 space-y-4">
         {response ? (
           <>
-            <div className="space-y-2">
-              <div className="text-[10px] font-mono text-[#64748b]">SYS // REASONING_ENGINE</div>
-              <div className="bg-white border border-[#e2e8f0] p-2 rounded-sm text-xs text-[#334155] shadow-sm font-sans leading-relaxed">
-                {response.reasoning}
+            {response.insights && (
+              <div className="space-y-2">
+                <div className="text-[10px] font-mono text-[#b8976a]">SYS // PLAYER_INSIGHTS</div>
+                <div 
+                  onClick={handleInsightsClick}
+                  className="bg-white border border-[#d6c4a8] p-2 rounded-sm text-xs text-[#374151] shadow-sm font-sans leading-relaxed [&_b]:text-[#166534] [&_b]:font-bold [&_b]:cursor-pointer hover:[&_b]:underline"
+                  dangerouslySetInnerHTML={{ __html: response.insights }}
+                />
               </div>
-            </div>
+            )}
 
             <div className="space-y-2">
-              <div className="text-[10px] font-mono text-[#64748b]">SYS // EXECUTION_STEPS</div>
-              <div className="bg-white border border-[#e2e8f0] p-2 rounded-sm shadow-sm space-y-2">
-                {response.steps.map((step, idx) => (
-                  <div key={idx} className="flex gap-2 items-start text-xs text-[#0f172a]">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#16a34a] mt-0.5 flex-shrink-0" />
-                    <span>{step}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <div className="text-[10px] font-mono text-[#64748b]">RECOMMENDED_ACTIONS</div>
+              <div className="text-[10px] font-mono text-[#b8976a]">RECOMMENDED_ACTIONS</div>
               <div className="space-y-1">
                 {response.actions.map((action, idx) => (
                   <button 
                     key={idx} 
                     onClick={() => handleQuery(action)}
-                    className="w-full flex items-center justify-between text-left text-xs bg-white border border-[#cbd5e1] hover:border-[#3b82f6] hover:bg-[#eff6ff] transition-colors p-2 rounded-sm text-[#0f172a]"
+                    className="w-full flex items-center justify-between text-left text-xs bg-white border border-[#d6c4a8] hover:border-[#ca8a04] hover:bg-[#fef9ee] transition-colors p-2 rounded-sm text-[#0f172a]"
                   >
                     <span>{action}</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#94a3b8]" />
+                    <ArrowRight className="w-3.5 h-3.5 text-[#b8976a]" />
                   </button>
                 ))}
               </div>
             </div>
           </>
         ) : (
-          <div className="flex items-center justify-center h-full text-[#64748b] text-xs font-mono uppercase">
+          <div className="flex items-center justify-center h-full text-[#b8976a] text-xs font-mono uppercase">
             Awaiting instructions...
           </div>
         )}
       </div>
 
-      <div className="p-3 border-t border-[#cbd5e1] bg-white">
-        <div className="text-[10px] font-mono text-[#64748b] mb-1">TERMINAL // INPUT</div>
+      <div className="p-3 border-t-2 border-[#ca8a04] bg-gradient-to-r from-[#14532d] to-[#166534]">
+        <div className="text-[10px] font-mono text-[#86efac] mb-1">TERMINAL // INPUT</div>
         <div className="relative">
           <textarea 
             rows={2}
@@ -117,13 +132,13 @@ export default function AIPanel() {
               }
             }}
             disabled={isLoading}
-            className="w-full bg-[#f8fafc] border border-[#cbd5e1] rounded-sm text-xs text-[#0f172a] p-2 focus:outline-none focus:border-[#3b82f6] focus:ring-1 focus:ring-[#3b82f6] resize-none font-mono"
+            className="w-full bg-[#0a3d1e] border border-[#166534] rounded-sm text-xs text-white p-2 focus:outline-none focus:border-[#ca8a04] focus:ring-1 focus:ring-[#ca8a04] resize-none font-mono placeholder:text-[#86efac] placeholder:opacity-50"
             placeholder="Instruct the agent... (e.g. Find left arm spinners with risk < 30%)"
           ></textarea>
           <button 
             onClick={() => handleQuery()}
             disabled={isLoading}
-            className="absolute bottom-2 right-2 bg-[#0f172a] text-white p-1 rounded-sm hover:bg-[#334155] disabled:opacity-50"
+            className="absolute bottom-2 right-2 bg-[#ca8a04] text-white p-1 rounded-sm hover:bg-[#a16207] disabled:opacity-50"
           >
             {isLoading ? <Loader2 className="w-3 h-3 animate-spin" /> : <Terminal className="w-3 h-3" />}
           </button>

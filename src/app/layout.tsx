@@ -17,7 +17,7 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Third Man | Enterprise Intelligence",
-  description: "Advanced football analytics workbench",
+  description: "Advanced cricket analytics workbench",
 };
 
 export default function RootLayout({
@@ -28,7 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${mono.variable} antialiased bg-[#e2e8f0] text-[#0f172a] h-screen overflow-hidden flex font-sans text-sm`}
+        suppressHydrationWarning
+        className={`${inter.variable} ${mono.variable} antialiased bg-[#166534] text-white h-screen overflow-hidden flex font-sans text-sm`}
       >
         <AppProvider>
           <NavigationRail />
