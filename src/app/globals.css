@@ -1,46 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-50: #f0fdf4;
-  --color-brand-100: #dcfce7;
-  --color-brand-500: #22c55e;
-  --color-brand-600: #16a34a;
-  --color-brand-700: #15803d;
-  --color-brand-900: #14532d;
-  
-  --color-surface-50: #f8fafc;
-  --color-surface-100: #f1f5f9;
-  --color-surface-200: #e2e8f0;
-  --color-surface-300: #cbd5e1;
-  --color-surface-800: #1e293b;
-  --color-surface-900: #0f172a;
+  /* Cricket Pitch Palette */
+  --color-pitch-cream: #faf8f3;
+  --color-pitch-sand: #f5f0e8;
+  --color-pitch-tan: #d6c4a8;
+  --color-pitch-rope: #b8976a;
+  --color-pitch-boundary: #ca8a04;
+  --color-pitch-grass: #166534;
+  --color-pitch-dark: #052e16;
+  --color-pitch-pavilion: #14532d;
+  --color-pitch-light-grass: #eef5e6;
+  --color-pitch-hover: #f0ebe0;
+
+  --color-surface-50: #faf8f3;
+  --color-surface-100: #f5f0e8;
+  --color-surface-200: #d6c4a8;
+  --color-surface-300: #b8976a;
+  --color-surface-800: #14532d;
+  --color-surface-900: #052e16;
 }
 
 :root {
-  --background: #f8fafc; /* surface-50 */
-  --foreground: #0f172a; /* surface-900 */
-  --card: #ffffff;
+  --background: #166534;
+  --foreground: #0f172a;
+  --card: #faf8f3;
   --card-foreground: #0f172a;
-  --border: #e2e8f0; /* surface-200 */
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
-  --primary: #16a34a; /* brand-600 */
+  --border: #b8976a;
+  --muted: #f5f0e8;
+  --muted-foreground: #6b7280;
+  --primary: #ca8a04;
   --primary-foreground: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  /* Enforcing light mode for that clinical Atlas feel, but adding dark mode tokens just in case */
-  :root {
-    --background: #0f172a;
-    --foreground: #f8fafc;
-    --card: #1e293b;
-    --card-foreground: #f8fafc;
-    --border: #334155;
-    --muted: #334155;
-    --muted-foreground: #94a3b8;
-    --primary: #22c55e;
-    --primary-foreground: #0f172a;
-  }
 }
 
 body {
@@ -51,18 +41,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.enterprise-shadow {
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+/* Boundary rope effect for main panels */
+.boundary-panel {
+  background-color: #faf8f3;
+  border: 2px solid #b8976a;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(184, 151, 106, 0.2);
 }
 
-.enterprise-panel {
-  background-color: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+/* Pitch strip header bars */
+.pitch-header {
+  background: linear-gradient(135deg, #14532d 0%, #166534 100%);
+  border-bottom: 2px solid #ca8a04;
+  color: #ffffff;
 }
 
-/* Custom scrollbar for tables */
+/* Crease line (inner sub-panel) */
+.crease-panel {
+  border: 1px solid #d6c4a8;
+  background-color: #faf8f3;
+  border-radius: 2px;
+}
+
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -71,9 +72,9 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
+  background: #d6c4a8;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--muted-foreground);
+  background: #b8976a;
 }
