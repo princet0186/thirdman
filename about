@@ -1,0 +1,17 @@
+# Third Man
+
+**The Concept:** A unified, AI-powered football intelligence platform designed for coaching staff and club management. It moves beyond isolated dashboards by providing a single Gemini-powered agent that reasons across four distinct modules simultaneously:
+1. **ScoutMind:** Talent discovery from lower leagues.
+2. **InjuryIQ:** Injury risk prediction and management.
+3. **FormCast:** Peak performance window forecasting.
+4. **OpponentEdge:** Tactical pattern analysis and opponent profiling.
+
+**Hackathon Alignment (Google Cloud Rapid Agent Hackathon):**
+Targets the "2026 World Cup" real-world challenge track. The agent performs complex, multi-step reasoning to evaluate players, tactics, and health metrics in real-time, functioning as an intelligent assistant to the coaching staff.
+
+**Tech Stack:**
+- **Frontend:** Next.js (React), Tailwind CSS, Framer Motion (Premium, dynamic sports analytics UI).
+- **Backend:** Python (FastAPI) for robust data processing and AI orchestration.
+- **AI/Agent Orchestration:** Google Cloud Agent Builder & Gemini (The core reasoning engine).
+- **Partner Integration:** Elastic (Elasticsearch) via Model Context Protocol (MCP).
+  - *Why Elastic?* Unifies structured data (goals, sprints) and unstructured data (scouting reports). Uses vector search to perform semantic queries like "Find 2nd division players with a playstyle similar to Robert Lewandowski, filtering out high injury risks."
