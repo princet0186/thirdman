@@ -1,0 +1,4857 @@
+[
+  {
+    "id": "CRK-2672",
+    "name": "Babar Azam",
+    "team": "PAK",
+    "role": "BAT",
+    "age": 30,
+    "avg": 38.94,
+    "sr": 128.02,
+    "rating": 9.7,
+    "injuryRisk": 32,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 24,
+        "workload": 44
+      },
+      {
+        "month": "W2",
+        "risk": 11,
+        "workload": 49
+      },
+      {
+        "month": "W3",
+        "risk": 13,
+        "workload": 53
+      },
+      {
+        "month": "W4",
+        "risk": 32,
+        "workload": 57
+      },
+      {
+        "month": "W5",
+        "risk": 12,
+        "workload": 50
+      },
+      {
+        "month": "W6",
+        "risk": 26,
+        "workload": 50
+      }
+    ],
+    "radarProfile": [
+      87,
+      95,
+      71,
+      5,
+      14,
+      86
+    ]
+  },
+  {
+    "id": "CRK-8171",
+    "name": "RG Sharma",
+    "team": "IND",
+    "role": "BAT",
+    "age": 31,
+    "avg": 32.05,
+    "sr": 140.89,
+    "rating": 9.9,
+    "injuryRisk": 46,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 16,
+        "workload": 43
+      },
+      {
+        "month": "W2",
+        "risk": 46,
+        "workload": 62
+      },
+      {
+        "month": "W3",
+        "risk": 18,
+        "workload": 49
+      },
+      {
+        "month": "W4",
+        "risk": 14,
+        "workload": 38
+      },
+      {
+        "month": "W5",
+        "risk": 34,
+        "workload": 57
+      },
+      {
+        "month": "W6",
+        "risk": 7,
+        "workload": 52
+      }
+    ],
+    "radarProfile": [
+      87,
+      70,
+      83,
+      9,
+      16,
+      74
+    ]
+  },
+  {
+    "id": "CRK-8021",
+    "name": "V Kohli",
+    "team": "IND",
+    "role": "BAT",
+    "age": 31,
+    "avg": 48.69,
+    "sr": 137.04,
+    "rating": 9.3,
+    "injuryRisk": 59,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 28,
+        "workload": 34
+      },
+      {
+        "month": "W2",
+        "risk": 10,
+        "workload": 31
+      },
+      {
+        "month": "W3",
+        "risk": 21,
+        "workload": 38
+      },
+      {
+        "month": "W4",
+        "risk": 25,
+        "workload": 45
+      },
+      {
+        "month": "W5",
+        "risk": 59,
+        "workload": 56
+      },
+      {
+        "month": "W6",
+        "risk": 40,
+        "workload": 61
+      }
+    ],
+    "radarProfile": [
+      90,
+      85,
+      78,
+      28,
+      10,
+      63
+    ]
+  },
+  {
+    "id": "CRK-4661",
+    "name": "JC Buttler",
+    "team": "ENG",
+    "role": "BAT",
+    "age": 36,
+    "avg": 33.64,
+    "sr": 147.76,
+    "rating": 9.2,
+    "injuryRisk": 26,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 10,
+        "workload": 23
+      },
+      {
+        "month": "W2",
+        "risk": 26,
+        "workload": 28
+      },
+      {
+        "month": "W3",
+        "risk": 18,
+        "workload": 26
+      },
+      {
+        "month": "W4",
+        "risk": 6,
+        "workload": 42
+      },
+      {
+        "month": "W5",
+        "risk": 5,
+        "workload": 41
+      },
+      {
+        "month": "W6",
+        "risk": 24,
+        "workload": 35
+      }
+    ],
+    "radarProfile": [
+      81,
+      84,
+      84,
+      16,
+      9,
+      76
+    ]
+  },
+  {
+    "id": "CRK-3378",
+    "name": "PR Stirling",
+    "team": "IRE",
+    "role": "BAT",
+    "age": 32,
+    "avg": 26.31,
+    "sr": 134.35,
+    "rating": 9.6,
+    "injuryRisk": 82,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 63,
+        "workload": 79
+      },
+      {
+        "month": "W2",
+        "risk": 31,
+        "workload": 65
+      },
+      {
+        "month": "W3",
+        "risk": 82,
+        "workload": 76
+      },
+      {
+        "month": "W4",
+        "risk": 39,
+        "workload": 67
+      },
+      {
+        "month": "W5",
+        "risk": 31,
+        "workload": 63
+      },
+      {
+        "month": "W6",
+        "risk": 8,
+        "workload": 50
+      }
+    ],
+    "radarProfile": [
+      83,
+      84,
+      85,
+      23,
+      7,
+      73
+    ]
+  },
+  {
+    "id": "CRK-5295",
+    "name": "MJ Guptill",
+    "team": "NZ",
+    "role": "BAT",
+    "age": 22,
+    "avg": 31.81,
+    "sr": 135.7,
+    "rating": 7.8,
+    "injuryRisk": 74,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 41,
+        "workload": 61
+      },
+      {
+        "month": "W2",
+        "risk": 74,
+        "workload": 78
+      },
+      {
+        "month": "W3",
+        "risk": 50,
+        "workload": 66
+      },
+      {
+        "month": "W4",
+        "risk": 56,
+        "workload": 64
+      },
+      {
+        "month": "W5",
+        "risk": 28,
+        "workload": 50
+      },
+      {
+        "month": "W6",
+        "risk": 56,
+        "workload": 60
+      }
+    ],
+    "radarProfile": [
+      93,
+      86,
+      64,
+      26,
+      14,
+      89
+    ]
+  },
+  {
+    "id": "CRK-2515",
+    "name": "Mohammad Rizwan",
+    "team": "PAK",
+    "role": "BAT",
+    "age": 34,
+    "avg": 47.41,
+    "sr": 125.37,
+    "rating": 7.1,
+    "injuryRisk": 52,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 52,
+        "workload": 59
+      },
+      {
+        "month": "W2",
+        "risk": 19,
+        "workload": 48
+      },
+      {
+        "month": "W3",
+        "risk": 8,
+        "workload": 47
+      },
+      {
+        "month": "W4",
+        "risk": 13,
+        "workload": 35
+      },
+      {
+        "month": "W5",
+        "risk": 7,
+        "workload": 34
+      },
+      {
+        "month": "W6",
+        "risk": 17,
+        "workload": 52
+      }
+    ],
+    "radarProfile": [
+      83,
+      72,
+      65,
+      25,
+      7,
+      75
+    ]
+  },
+  {
+    "id": "CRK-6124",
+    "name": "Muhammad Waseem",
+    "team": "UAE",
+    "role": "BAT",
+    "age": 32,
+    "avg": 36.24,
+    "sr": 150.96,
+    "rating": 8.4,
+    "injuryRisk": 91,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 59,
+        "workload": 71
+      },
+      {
+        "month": "W2",
+        "risk": 83,
+        "workload": 80
+      },
+      {
+        "month": "W3",
+        "risk": 67,
+        "workload": 95
+      },
+      {
+        "month": "W4",
+        "risk": 91,
+        "workload": 100
+      },
+      {
+        "month": "W5",
+        "risk": 88,
+        "workload": 99
+      },
+      {
+        "month": "W6",
+        "risk": 83,
+        "workload": 100
+      }
+    ],
+    "radarProfile": [
+      78,
+      91,
+      78,
+      28,
+      20,
+      81
+    ]
+  },
+  {
+    "id": "CRK-2180",
+    "name": "Virandeep Singh",
+    "team": "MAS",
+    "role": "ALL",
+    "age": 35,
+    "avg": 36.15,
+    "sr": 127.91,
+    "rating": 9.3,
+    "bowl_avg": 13.98,
+    "econ": 5.44,
+    "injuryRisk": 95,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 39,
+        "workload": 70
+      },
+      {
+        "month": "W2",
+        "risk": 95,
+        "workload": 86
+      },
+      {
+        "month": "W3",
+        "risk": 91,
+        "workload": 95
+      },
+      {
+        "month": "W4",
+        "risk": 95,
+        "workload": 99
+      },
+      {
+        "month": "W5",
+        "risk": 86,
+        "workload": 100
+      },
+      {
+        "month": "W6",
+        "risk": 89,
+        "workload": 90
+      }
+    ],
+    "radarProfile": [
+      61,
+      75,
+      66,
+      60,
+      85,
+      90
+    ]
+  },
+  {
+    "id": "CRK-1795",
+    "name": "DA Warner",
+    "team": "AUS",
+    "role": "BAT",
+    "age": 28,
+    "avg": 33.43,
+    "sr": 142.47,
+    "rating": 9.8,
+    "injuryRisk": 93,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 21,
+        "workload": 47
+      },
+      {
+        "month": "W2",
+        "risk": 53,
+        "workload": 66
+      },
+      {
+        "month": "W3",
+        "risk": 79,
+        "workload": 79
+      },
+      {
+        "month": "W4",
+        "risk": 84,
+        "workload": 87
+      },
+      {
+        "month": "W5",
+        "risk": 77,
+        "workload": 100
+      },
+      {
+        "month": "W6",
+        "risk": 93,
+        "workload": 100
+      }
+    ],
+    "radarProfile": [
+      95,
+      81,
+      62,
+      28,
+      20,
+      80
+    ]
+  },
+  {
+    "id": "CRK-1430",
+    "name": "SA Yadav",
+    "team": "IND",
+    "role": "BAT",
+    "age": 37,
+    "avg": 36.35,
+    "sr": 162.94,
+    "rating": 8.7,
+    "injuryRisk": 28,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 28,
+        "workload": 35
+      },
+      {
+        "month": "W2",
+        "risk": 27,
+        "workload": 51
+      },
+      {
+        "month": "W3",
+        "risk": 13,
+        "workload": 37
+      },
+      {
+        "month": "W4",
+        "risk": 9,
+        "workload": 30
+      },
+      {
+        "month": "W5",
+        "risk": 25,
+        "workload": 22
+      },
+      {
+        "month": "W6",
+        "risk": 12,
+        "workload": 12
+      }
+    ],
+    "radarProfile": [
+      80,
+      71,
+      65,
+      22,
+      6,
+      72
+    ]
+  },
+  {
+    "id": "CRK-5505",
+    "name": "AJ Finch",
+    "team": "AUS",
+    "role": "BAT",
+    "age": 27,
+    "avg": 34.28,
+    "sr": 142.53,
+    "rating": 8.2,
+    "injuryRisk": 93,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 56,
+        "workload": 64
+      },
+      {
+        "month": "W2",
+        "risk": 50,
+        "workload": 66
+      },
+      {
+        "month": "W3",
+        "risk": 93,
+        "workload": 81
+      },
+      {
+        "month": "W4",
+        "risk": 59,
+        "workload": 69
+      },
+      {
+        "month": "W5",
+        "risk": 46,
+        "workload": 71
+      },
+      {
+        "month": "W6",
+        "risk": 30,
+        "workload": 62
+      }
+    ],
+    "radarProfile": [
+      95,
+      92,
+      90,
+      5,
+      6,
+      85
+    ]
+  },
+  {
+    "id": "CRK-7578",
+    "name": "Q de Kock",
+    "team": "SA",
+    "role": "BAT",
+    "age": 37,
+    "avg": 30.95,
+    "sr": 142.23,
+    "rating": 7.7,
+    "injuryRisk": 24,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 11,
+        "workload": 32
+      },
+      {
+        "month": "W2",
+        "risk": 24,
+        "workload": 36
+      },
+      {
+        "month": "W3",
+        "risk": 10,
+        "workload": 47
+      },
+      {
+        "month": "W4",
+        "risk": 8,
+        "workload": 44
+      },
+      {
+        "month": "W5",
+        "risk": 14,
+        "workload": 45
+      },
+      {
+        "month": "W6",
+        "risk": 17,
+        "workload": 42
+      }
+    ],
+    "radarProfile": [
+      72,
+      88,
+      94,
+      13,
+      8,
+      88
+    ]
+  },
+  {
+    "id": "CRK-2201",
+    "name": "Sikandar Raza",
+    "team": "ZIM",
+    "role": "ALL",
+    "age": 23,
+    "avg": 26.62,
+    "sr": 136.92,
+    "rating": 7.9,
+    "bowl_avg": 23.54,
+    "econ": 6.88,
+    "injuryRisk": 27,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 22,
+        "workload": 37
+      },
+      {
+        "month": "W2",
+        "risk": 10,
+        "workload": 26
+      },
+      {
+        "month": "W3",
+        "risk": 27,
+        "workload": 21
+      },
+      {
+        "month": "W4",
+        "risk": 10,
+        "workload": 20
+      },
+      {
+        "month": "W5",
+        "risk": 7,
+        "workload": 15
+      },
+      {
+        "month": "W6",
+        "risk": 27,
+        "workload": 31
+      }
+    ],
+    "radarProfile": [
+      73,
+      81,
+      83,
+      81,
+      70,
+      73
+    ]
+  },
+  {
+    "id": "CRK-1940",
+    "name": "Syed Aziz",
+    "team": "MAS",
+    "role": "BAT",
+    "age": 26,
+    "avg": 29.77,
+    "sr": 140.15,
+    "rating": 9.5,
+    "injuryRisk": 31,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 13,
+        "workload": 49
+      },
+      {
+        "month": "W2",
+        "risk": 24,
+        "workload": 35
+      },
+      {
+        "month": "W3",
+        "risk": 5,
+        "workload": 27
+      },
+      {
+        "month": "W4",
+        "risk": 13,
+        "workload": 36
+      },
+      {
+        "month": "W5",
+        "risk": 29,
+        "workload": 51
+      },
+      {
+        "month": "W6",
+        "risk": 31,
+        "workload": 63
+      }
+    ],
+    "radarProfile": [
+      87,
+      91,
+      65,
+      9,
+      13,
+      84
+    ]
+  },
+  {
+    "id": "CRK-2371",
+    "name": "GJ Maxwell",
+    "team": "AUS",
+    "role": "BAT",
+    "age": 22,
+    "avg": 28.97,
+    "sr": 154.42,
+    "rating": 9.4,
+    "injuryRisk": 28,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 24,
+        "workload": 42
+      },
+      {
+        "month": "W2",
+        "risk": 28,
+        "workload": 40
+      },
+      {
+        "month": "W3",
+        "risk": 26,
+        "workload": 36
+      },
+      {
+        "month": "W4",
+        "risk": 27,
+        "workload": 25
+      },
+      {
+        "month": "W5",
+        "risk": 23,
+        "workload": 32
+      },
+      {
+        "month": "W6",
+        "risk": 22,
+        "workload": 50
+      }
+    ],
+    "radarProfile": [
+      75,
+      95,
+      61,
+      24,
+      10,
+      71
+    ]
+  },
+  {
+    "id": "CRK-5683",
+    "name": "DA Miller",
+    "team": "SA/World",
+    "role": "BAT",
+    "age": 25,
+    "avg": 33.78,
+    "sr": 141.4,
+    "rating": 7.5,
+    "injuryRisk": 95,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 37,
+        "workload": 72
+      },
+      {
+        "month": "W2",
+        "risk": 77,
+        "workload": 90
+      },
+      {
+        "month": "W3",
+        "risk": 95,
+        "workload": 100
+      },
+      {
+        "month": "W4",
+        "risk": 70,
+        "workload": 100
+      },
+      {
+        "month": "W5",
+        "risk": 89,
+        "workload": 100
+      },
+      {
+        "month": "W6",
+        "risk": 78,
+        "workload": 100
+      }
+    ],
+    "radarProfile": [
+      78,
+      78,
+      93,
+      24,
+      13,
+      62
+    ]
+  },
+  {
+    "id": "CRK-4181",
+    "name": "Litton Das",
+    "team": "BAN",
+    "role": "BAT",
+    "age": 32,
+    "avg": 23.49,
+    "sr": 126.79,
+    "rating": 7.2,
+    "injuryRisk": 86,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 6,
+        "workload": 47
+      },
+      {
+        "month": "W2",
+        "risk": 51,
+        "workload": 56
+      },
+      {
+        "month": "W3",
+        "risk": 35,
+        "workload": 69
+      },
+      {
+        "month": "W4",
+        "risk": 86,
+        "workload": 76
+      },
+      {
+        "month": "W5",
+        "risk": 35,
+        "workload": 62
+      },
+      {
+        "month": "W6",
+        "risk": 8,
+        "workload": 54
+      }
+    ],
+    "radarProfile": [
+      95,
+      73,
+      68,
+      14,
+      20,
+      87
+    ]
+  },
+  {
+    "id": "CRK-8723",
+    "name": "P Nissanka",
+    "team": "SL",
+    "role": "BAT",
+    "age": 30,
+    "avg": 31.15,
+    "sr": 128.66,
+    "rating": 8.7,
+    "injuryRisk": 40,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 16,
+        "workload": 39
+      },
+      {
+        "month": "W2",
+        "risk": 29,
+        "workload": 49
+      },
+      {
+        "month": "W3",
+        "risk": 27,
+        "workload": 53
+      },
+      {
+        "month": "W4",
+        "risk": 6,
+        "workload": 39
+      },
+      {
+        "month": "W5",
+        "risk": 40,
+        "workload": 58
+      },
+      {
+        "month": "W6",
+        "risk": 10,
+        "workload": 51
+      }
+    ],
+    "radarProfile": [
+      93,
+      90,
+      76,
+      14,
+      19,
+      73
+    ]
+  },
+  {
+    "id": "CRK-8211",
+    "name": "BKG Mendis",
+    "team": "SL",
+    "role": "BAT",
+    "age": 26,
+    "avg": 26.22,
+    "sr": 129.67,
+    "rating": 7.1,
+    "injuryRisk": 93,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 35,
+        "workload": 70
+      },
+      {
+        "month": "W2",
+        "risk": 42,
+        "workload": 75
+      },
+      {
+        "month": "W3",
+        "risk": 83,
+        "workload": 94
+      },
+      {
+        "month": "W4",
+        "risk": 78,
+        "workload": 100
+      },
+      {
+        "month": "W5",
+        "risk": 93,
+        "workload": 90
+      },
+      {
+        "month": "W6",
+        "risk": 89,
+        "workload": 82
+      }
+    ],
+    "radarProfile": [
+      83,
+      76,
+      66,
+      8,
+      9,
+      61
+    ]
+  },
+  {
+    "id": "CRK-5747",
+    "name": "HG Munsey",
+    "team": "SCOT",
+    "role": "BAT",
+    "age": 30,
+    "avg": 32.07,
+    "sr": 143.93,
+    "rating": 7.2,
+    "injuryRisk": 28,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 14,
+        "workload": 24
+      },
+      {
+        "month": "W2",
+        "risk": 22,
+        "workload": 33
+      },
+      {
+        "month": "W3",
+        "risk": 22,
+        "workload": 44
+      },
+      {
+        "month": "W4",
+        "risk": 28,
+        "workload": 30
+      },
+      {
+        "month": "W5",
+        "risk": 24,
+        "workload": 38
+      },
+      {
+        "month": "W6",
+        "risk": 11,
+        "workload": 36
+      }
+    ],
+    "radarProfile": [
+      90,
+      85,
+      72,
+      14,
+      11,
+      65
+    ]
+  },
+  {
+    "id": "CRK-4508",
+    "name": "KS Williamson",
+    "team": "NZ",
+    "role": "BAT",
+    "age": 29,
+    "avg": 33.44,
+    "sr": 123.08,
+    "rating": 8.9,
+    "injuryRisk": 85,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 11,
+        "workload": 51
+      },
+      {
+        "month": "W2",
+        "risk": 53,
+        "workload": 66
+      },
+      {
+        "month": "W3",
+        "risk": 85,
+        "workload": 76
+      },
+      {
+        "month": "W4",
+        "risk": 61,
+        "workload": 92
+      },
+      {
+        "month": "W5",
+        "risk": 72,
+        "workload": 98
+      },
+      {
+        "month": "W6",
+        "risk": 80,
+        "workload": 92
+      }
+    ],
+    "radarProfile": [
+      91,
+      73,
+      95,
+      7,
+      16,
+      68
+    ]
+  },
+  {
+    "id": "CRK-4844",
+    "name": "Shakib Al Hasan",
+    "team": "BAN",
+    "role": "ALL",
+    "age": 36,
+    "avg": 23.19,
+    "sr": 121.18,
+    "rating": 7.8,
+    "bowl_avg": 20.91,
+    "econ": 6.81,
+    "injuryRisk": 90,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 6,
+        "workload": 46
+      },
+      {
+        "month": "W2",
+        "risk": 47,
+        "workload": 62
+      },
+      {
+        "month": "W3",
+        "risk": 47,
+        "workload": 67
+      },
+      {
+        "month": "W4",
+        "risk": 46,
+        "workload": 66
+      },
+      {
+        "month": "W5",
+        "risk": 90,
+        "workload": 82
+      },
+      {
+        "month": "W6",
+        "risk": 63,
+        "workload": 94
+      }
+    ],
+    "radarProfile": [
+      81,
+      71,
+      77,
+      69,
+      71,
+      71
+    ]
+  },
+  {
+    "id": "CRK-9881",
+    "name": "Mohammad Hafeez",
+    "team": "PAK",
+    "role": "BAT",
+    "age": 27,
+    "avg": 26.46,
+    "sr": 122.03,
+    "rating": 8.8,
+    "injuryRisk": 94,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 37,
+        "workload": 56
+      },
+      {
+        "month": "W2",
+        "risk": 11,
+        "workload": 54
+      },
+      {
+        "month": "W3",
+        "risk": 39,
+        "workload": 68
+      },
+      {
+        "month": "W4",
+        "risk": 94,
+        "workload": 85
+      },
+      {
+        "month": "W5",
+        "risk": 63,
+        "workload": 94
+      },
+      {
+        "month": "W6",
+        "risk": 84,
+        "workload": 84
+      }
+    ],
+    "radarProfile": [
+      93,
+      87,
+      89,
+      15,
+      11,
+      78
+    ]
+  },
+  {
+    "id": "CRK-5893",
+    "name": "RD Berrington",
+    "team": "SCOT",
+    "role": "BAT",
+    "age": 37,
+    "avg": 30.91,
+    "sr": 132.41,
+    "rating": 8.7,
+    "injuryRisk": 80,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 54,
+        "workload": 67
+      },
+      {
+        "month": "W2",
+        "risk": 54,
+        "workload": 74
+      },
+      {
+        "month": "W3",
+        "risk": 80,
+        "workload": 77
+      },
+      {
+        "month": "W4",
+        "risk": 72,
+        "workload": 80
+      },
+      {
+        "month": "W5",
+        "risk": 76,
+        "workload": 86
+      },
+      {
+        "month": "W6",
+        "risk": 68,
+        "workload": 100
+      }
+    ],
+    "radarProfile": [
+      83,
+      70,
+      80,
+      12,
+      8,
+      61
+    ]
+  },
+  {
+    "id": "CRK-4572",
+    "name": "RR Hendricks",
+    "team": "SA",
+    "role": "BAT",
+    "age": 23,
+    "avg": 28.78,
+    "sr": 129.2,
+    "rating": 9.8,
+    "injuryRisk": 38,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 21,
+        "workload": 34
+      },
+      {
+        "month": "W2",
+        "risk": 20,
+        "workload": 37
+      },
+      {
+        "month": "W3",
+        "risk": 28,
+        "workload": 49
+      },
+      {
+        "month": "W4",
+        "risk": 38,
+        "workload": 64
+      },
+      {
+        "month": "W5",
+        "risk": 21,
+        "workload": 50
+      },
+      {
+        "month": "W6",
+        "risk": 6,
+        "workload": 49
+      }
+    ],
+    "radarProfile": [
+      86,
+      87,
+      72,
+      24,
+      20,
+      75
+    ]
+  },
+  {
+    "id": "CRK-3825",
+    "name": "Fakhar Zaman",
+    "team": "PAK",
+    "role": "BAT",
+    "age": 30,
+    "avg": 23.98,
+    "sr": 132.51,
+    "rating": 9.1,
+    "injuryRisk": 58,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 7,
+        "workload": 46
+      },
+      {
+        "month": "W2",
+        "risk": 37,
+        "workload": 60
+      },
+      {
+        "month": "W3",
+        "risk": 55,
+        "workload": 65
+      },
+      {
+        "month": "W4",
+        "risk": 8,
+        "workload": 55
+      },
+      {
+        "month": "W5",
+        "risk": 58,
+        "workload": 56
+      },
+      {
+        "month": "W6",
+        "risk": 52,
+        "workload": 57
+      }
+    ],
+    "radarProfile": [
+      95,
+      83,
+      84,
+      24,
+      6,
+      85
+    ]
+  },
+  {
+    "id": "CRK-8544",
+    "name": "EJG Morgan",
+    "team": "ENG",
+    "role": "WK-BAT",
+    "age": 23,
+    "avg": 28.58,
+    "sr": 136.17,
+    "rating": 7.1,
+    "injuryRisk": 28,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 18,
+        "workload": 25
+      },
+      {
+        "month": "W2",
+        "risk": 28,
+        "workload": 36
+      },
+      {
+        "month": "W3",
+        "risk": 6,
+        "workload": 48
+      },
+      {
+        "month": "W4",
+        "risk": 18,
+        "workload": 35
+      },
+      {
+        "month": "W5",
+        "risk": 13,
+        "workload": 32
+      },
+      {
+        "month": "W6",
+        "risk": 26,
+        "workload": 52
+      }
+    ],
+    "radarProfile": [
+      95,
+      91,
+      68,
+      27,
+      19,
+      89
+    ]
+  },
+  {
+    "id": "CRK-7083",
+    "name": "Mohammad Nabi",
+    "team": "AFG",
+    "role": "ALL",
+    "age": 33,
+    "avg": 22.25,
+    "sr": 136.37,
+    "rating": 9.0,
+    "bowl_avg": 27.77,
+    "econ": 7.31,
+    "injuryRisk": 55,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 18,
+        "workload": 41
+      },
+      {
+        "month": "W2",
+        "risk": 20,
+        "workload": 47
+      },
+      {
+        "month": "W3",
+        "risk": 54,
+        "workload": 56
+      },
+      {
+        "month": "W4",
+        "risk": 55,
+        "workload": 63
+      },
+      {
+        "month": "W5",
+        "risk": 43,
+        "workload": 56
+      },
+      {
+        "month": "W6",
+        "risk": 39,
+        "workload": 57
+      }
+    ],
+    "radarProfile": [
+      84,
+      60,
+      66,
+      67,
+      81,
+      73
+    ]
+  },
+  {
+    "id": "CRK-7159",
+    "name": "Mahmudullah",
+    "team": "BAN",
+    "role": "BAT",
+    "age": 34,
+    "avg": 23.5,
+    "sr": 117.38,
+    "rating": 8.7,
+    "injuryRisk": 59,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 53,
+        "workload": 65
+      },
+      {
+        "month": "W2",
+        "risk": 59,
+        "workload": 59
+      },
+      {
+        "month": "W3",
+        "risk": 11,
+        "workload": 55
+      },
+      {
+        "month": "W4",
+        "risk": 13,
+        "workload": 49
+      },
+      {
+        "month": "W5",
+        "risk": 9,
+        "workload": 45
+      },
+      {
+        "month": "W6",
+        "risk": 8,
+        "workload": 39
+      }
+    ],
+    "radarProfile": [
+      88,
+      80,
+      67,
+      22,
+      20,
+      81
+    ]
+  },
+  {
+    "id": "CRK-1888",
+    "name": "Shoaib Malik",
+    "team": "ICC/PAK",
+    "role": "BAT",
+    "age": 32,
+    "avg": 31.21,
+    "sr": 125.64,
+    "rating": 7.2,
+    "injuryRisk": 21,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 12,
+        "workload": 22
+      },
+      {
+        "month": "W2",
+        "risk": 17,
+        "workload": 19
+      },
+      {
+        "month": "W3",
+        "risk": 10,
+        "workload": 33
+      },
+      {
+        "month": "W4",
+        "risk": 16,
+        "workload": 27
+      },
+      {
+        "month": "W5",
+        "risk": 21,
+        "workload": 17
+      },
+      {
+        "month": "W6",
+        "risk": 15,
+        "workload": 14
+      }
+    ],
+    "radarProfile": [
+      87,
+      71,
+      64,
+      17,
+      17,
+      71
+    ]
+  },
+  {
+    "id": "CRK-8574",
+    "name": "Nizakat Khan",
+    "team": "HKG",
+    "role": "BAT",
+    "age": 34,
+    "avg": 21.64,
+    "sr": 120.27,
+    "rating": 8.5,
+    "injuryRisk": 48,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 22,
+        "workload": 42
+      },
+      {
+        "month": "W2",
+        "risk": 13,
+        "workload": 41
+      },
+      {
+        "month": "W3",
+        "risk": 14,
+        "workload": 32
+      },
+      {
+        "month": "W4",
+        "risk": 14,
+        "workload": 51
+      },
+      {
+        "month": "W5",
+        "risk": 48,
+        "workload": 59
+      },
+      {
+        "month": "W6",
+        "risk": 13,
+        "workload": 52
+      }
+    ],
+    "radarProfile": [
+      78,
+      85,
+      69,
+      19,
+      10,
+      60
+    ]
+  },
+  {
+    "id": "CRK-8365",
+    "name": "A Balbirnie",
+    "team": "IRE",
+    "role": "BAT",
+    "age": 22,
+    "avg": 23.45,
+    "sr": 123.23,
+    "rating": 7.2,
+    "injuryRisk": 29,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 29,
+        "workload": 43
+      },
+      {
+        "month": "W2",
+        "risk": 7,
+        "workload": 43
+      },
+      {
+        "month": "W3",
+        "risk": 11,
+        "workload": 54
+      },
+      {
+        "month": "W4",
+        "risk": 6,
+        "workload": 46
+      },
+      {
+        "month": "W5",
+        "risk": 25,
+        "workload": 49
+      },
+      {
+        "month": "W6",
+        "risk": 13,
+        "workload": 51
+      }
+    ],
+    "radarProfile": [
+      75,
+      93,
+      70,
+      18,
+      6,
+      88
+    ]
+  },
+  {
+    "id": "CRK-2980",
+    "name": "MP O'Dowd",
+    "team": "NED",
+    "role": "BAT",
+    "age": 28,
+    "avg": 29.06,
+    "sr": 121.84,
+    "rating": 9.3,
+    "injuryRisk": 56,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 5,
+        "workload": 41
+      },
+      {
+        "month": "W2",
+        "risk": 11,
+        "workload": 52
+      },
+      {
+        "month": "W3",
+        "risk": 19,
+        "workload": 41
+      },
+      {
+        "month": "W4",
+        "risk": 20,
+        "workload": 50
+      },
+      {
+        "month": "W5",
+        "risk": 56,
+        "workload": 59
+      },
+      {
+        "month": "W6",
+        "risk": 36,
+        "workload": 68
+      }
+    ],
+    "radarProfile": [
+      92,
+      72,
+      85,
+      16,
+      10,
+      87
+    ]
+  },
+  {
+    "id": "CRK-9475",
+    "name": "Babar Hayat",
+    "team": "HKG",
+    "role": "BAT",
+    "age": 37,
+    "avg": 27.19,
+    "sr": 128.65,
+    "rating": 9.6,
+    "injuryRisk": 81,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 52,
+        "workload": 69
+      },
+      {
+        "month": "W2",
+        "risk": 50,
+        "workload": 58
+      },
+      {
+        "month": "W3",
+        "risk": 34,
+        "workload": 73
+      },
+      {
+        "month": "W4",
+        "risk": 76,
+        "workload": 79
+      },
+      {
+        "month": "W5",
+        "risk": 81,
+        "workload": 93
+      },
+      {
+        "month": "W6",
+        "risk": 81,
+        "workload": 91
+      }
+    ],
+    "radarProfile": [
+      70,
+      85,
+      81,
+      29,
+      16,
+      71
+    ]
+  },
+  {
+    "id": "CRK-8217",
+    "name": "MDKJ Perera",
+    "team": "SL",
+    "role": "BAT",
+    "age": 34,
+    "avg": 26.23,
+    "sr": 132.89,
+    "rating": 7.8,
+    "injuryRisk": 83,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 42,
+        "workload": 65
+      },
+      {
+        "month": "W2",
+        "risk": 50,
+        "workload": 59
+      },
+      {
+        "month": "W3",
+        "risk": 46,
+        "workload": 62
+      },
+      {
+        "month": "W4",
+        "risk": 58,
+        "workload": 65
+      },
+      {
+        "month": "W5",
+        "risk": 83,
+        "workload": 80
+      },
+      {
+        "month": "W6",
+        "risk": 41,
+        "workload": 65
+      }
+    ],
+    "radarProfile": [
+      88,
+      89,
+      72,
+      26,
+      15,
+      67
+    ]
+  },
+  {
+    "id": "CRK-8772",
+    "name": "HH Pandya",
+    "team": "IND",
+    "role": "ALL",
+    "age": 35,
+    "avg": 28.24,
+    "sr": 145.91,
+    "rating": 9.7,
+    "bowl_avg": 27.13,
+    "econ": 8.34,
+    "injuryRisk": 25,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 8,
+        "workload": 29
+      },
+      {
+        "month": "W2",
+        "risk": 9,
+        "workload": 33
+      },
+      {
+        "month": "W3",
+        "risk": 17,
+        "workload": 25
+      },
+      {
+        "month": "W4",
+        "risk": 10,
+        "workload": 26
+      },
+      {
+        "month": "W5",
+        "risk": 25,
+        "workload": 28
+      },
+      {
+        "month": "W6",
+        "risk": 20,
+        "workload": 43
+      }
+    ],
+    "radarProfile": [
+      77,
+      74,
+      69,
+      77,
+      84,
+      71
+    ]
+  },
+  {
+    "id": "CRK-6122",
+    "name": "GD Phillips",
+    "team": "NZ",
+    "role": "BAT",
+    "age": 28,
+    "avg": 31.75,
+    "sr": 142.69,
+    "rating": 7.6,
+    "injuryRisk": 26,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 13,
+        "workload": 42
+      },
+      {
+        "month": "W2",
+        "risk": 7,
+        "workload": 37
+      },
+      {
+        "month": "W3",
+        "risk": 10,
+        "workload": 42
+      },
+      {
+        "month": "W4",
+        "risk": 26,
+        "workload": 29
+      },
+      {
+        "month": "W5",
+        "risk": 16,
+        "workload": 24
+      },
+      {
+        "month": "W6",
+        "risk": 15,
+        "workload": 11
+      }
+    ],
+    "radarProfile": [
+      87,
+      88,
+      72,
+      14,
+      11,
+      70
+    ]
+  },
+  {
+    "id": "CRK-5643",
+    "name": "Rahmanullah Gurbaz",
+    "team": "AFG",
+    "role": "BAT",
+    "age": 25,
+    "avg": 26.2,
+    "sr": 135.55,
+    "rating": 8.7,
+    "injuryRisk": 69,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 32,
+        "workload": 66
+      },
+      {
+        "month": "W2",
+        "risk": 45,
+        "workload": 65
+      },
+      {
+        "month": "W3",
+        "risk": 18,
+        "workload": 51
+      },
+      {
+        "month": "W4",
+        "risk": 13,
+        "workload": 50
+      },
+      {
+        "month": "W5",
+        "risk": 58,
+        "workload": 61
+      },
+      {
+        "month": "W6",
+        "risk": 69,
+        "workload": 76
+      }
+    ],
+    "radarProfile": [
+      74,
+      73,
+      88,
+      20,
+      11,
+      88
+    ]
+  },
+  {
+    "id": "CRK-5158",
+    "name": "TL Seifert",
+    "team": "NZ",
+    "role": "BAT",
+    "age": 25,
+    "avg": 31.21,
+    "sr": 146.37,
+    "rating": 8.9,
+    "injuryRisk": 28,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 28,
+        "workload": 41
+      },
+      {
+        "month": "W2",
+        "risk": 11,
+        "workload": 38
+      },
+      {
+        "month": "W3",
+        "risk": 10,
+        "workload": 24
+      },
+      {
+        "month": "W4",
+        "risk": 23,
+        "workload": 13
+      },
+      {
+        "month": "W5",
+        "risk": 5,
+        "workload": 30
+      },
+      {
+        "month": "W6",
+        "risk": 17,
+        "workload": 38
+      }
+    ],
+    "radarProfile": [
+      81,
+      84,
+      86,
+      20,
+      18,
+      77
+    ]
+  },
+  {
+    "id": "CRK-6056",
+    "name": "N Pooran",
+    "team": "WI",
+    "role": "BAT",
+    "age": 35,
+    "avg": 26.14,
+    "sr": 136.39,
+    "rating": 8.5,
+    "injuryRisk": 81,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 47,
+        "workload": 61
+      },
+      {
+        "month": "W2",
+        "risk": 47,
+        "workload": 73
+      },
+      {
+        "month": "W3",
+        "risk": 53,
+        "workload": 59
+      },
+      {
+        "month": "W4",
+        "risk": 36,
+        "workload": 69
+      },
+      {
+        "month": "W5",
+        "risk": 81,
+        "workload": 77
+      },
+      {
+        "month": "W6",
+        "risk": 46,
+        "workload": 74
+      }
+    ],
+    "radarProfile": [
+      92,
+      86,
+      79,
+      16,
+      20,
+      72
+    ]
+  },
+  {
+    "id": "CRK-5550",
+    "name": "KL Rahul",
+    "team": "IND",
+    "role": "WK-BAT",
+    "age": 33,
+    "avg": 37.75,
+    "sr": 139.12,
+    "rating": 9.0,
+    "injuryRisk": 69,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 28,
+        "workload": 49
+      },
+      {
+        "month": "W2",
+        "risk": 51,
+        "workload": 64
+      },
+      {
+        "month": "W3",
+        "risk": 59,
+        "workload": 64
+      },
+      {
+        "month": "W4",
+        "risk": 52,
+        "workload": 67
+      },
+      {
+        "month": "W5",
+        "risk": 69,
+        "workload": 79
+      },
+      {
+        "month": "W6",
+        "risk": 55,
+        "workload": 64
+      }
+    ],
+    "radarProfile": [
+      76,
+      93,
+      84,
+      14,
+      16,
+      77
+    ]
+  },
+  {
+    "id": "CRK-3492",
+    "name": "R Powell",
+    "team": "WI",
+    "role": "BAT",
+    "age": 32,
+    "avg": 25.98,
+    "sr": 141.84,
+    "rating": 9.7,
+    "injuryRisk": 71,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 19,
+        "workload": 48
+      },
+      {
+        "month": "W2",
+        "risk": 50,
+        "workload": 67
+      },
+      {
+        "month": "W3",
+        "risk": 38,
+        "workload": 57
+      },
+      {
+        "month": "W4",
+        "risk": 51,
+        "workload": 73
+      },
+      {
+        "month": "W5",
+        "risk": 71,
+        "workload": 81
+      },
+      {
+        "month": "W6",
+        "risk": 55,
+        "workload": 66
+      }
+    ],
+    "radarProfile": [
+      91,
+      81,
+      82,
+      19,
+      8,
+      84
+    ]
+  },
+  {
+    "id": "CRK-2114",
+    "name": "Karanbir Singh",
+    "team": "AUT",
+    "role": "BAT",
+    "age": 31,
+    "avg": 48.26,
+    "sr": 172.76,
+    "rating": 7.1,
+    "injuryRisk": 73,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 16,
+        "workload": 31
+      },
+      {
+        "month": "W2",
+        "risk": 12,
+        "workload": 48
+      },
+      {
+        "month": "W3",
+        "risk": 46,
+        "workload": 56
+      },
+      {
+        "month": "W4",
+        "risk": 53,
+        "workload": 67
+      },
+      {
+        "month": "W5",
+        "risk": 73,
+        "workload": 77
+      },
+      {
+        "month": "W6",
+        "risk": 64,
+        "workload": 90
+      }
+    ],
+    "radarProfile": [
+      80,
+      86,
+      86,
+      13,
+      13,
+      64
+    ]
+  },
+  {
+    "id": "CRK-4410",
+    "name": "MR Marsh",
+    "team": "AUS",
+    "role": "BAT",
+    "age": 22,
+    "avg": 33.63,
+    "sr": 141.67,
+    "rating": 8.5,
+    "injuryRisk": 29,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 25,
+        "workload": 45
+      },
+      {
+        "month": "W2",
+        "risk": 25,
+        "workload": 35
+      },
+      {
+        "month": "W3",
+        "risk": 26,
+        "workload": 31
+      },
+      {
+        "month": "W4",
+        "risk": 16,
+        "workload": 22
+      },
+      {
+        "month": "W5",
+        "risk": 17,
+        "workload": 10
+      },
+      {
+        "month": "W6",
+        "risk": 29,
+        "workload": 10
+      }
+    ],
+    "radarProfile": [
+      73,
+      71,
+      69,
+      29,
+      6,
+      67
+    ]
+  },
+  {
+    "id": "CRK-6862",
+    "name": "S Ssesazi",
+    "team": "UGA",
+    "role": "BAT",
+    "age": 34,
+    "avg": 29.0,
+    "sr": 123.19,
+    "rating": 8.9,
+    "injuryRisk": 21,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 21,
+        "workload": 28
+      },
+      {
+        "month": "W2",
+        "risk": 17,
+        "workload": 39
+      },
+      {
+        "month": "W3",
+        "risk": 19,
+        "workload": 31
+      },
+      {
+        "month": "W4",
+        "risk": 12,
+        "workload": 25
+      },
+      {
+        "month": "W5",
+        "risk": 8,
+        "workload": 16
+      },
+      {
+        "month": "W6",
+        "risk": 11,
+        "workload": 10
+      }
+    ],
+    "radarProfile": [
+      87,
+      93,
+      66,
+      14,
+      17,
+      74
+    ]
+  },
+  {
+    "id": "CRK-3441",
+    "name": "DS Airee",
+    "team": "NEP",
+    "role": "BAT",
+    "age": 24,
+    "avg": 34.06,
+    "sr": 138.41,
+    "rating": 9.4,
+    "injuryRisk": 82,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 26,
+        "workload": 44
+      },
+      {
+        "month": "W2",
+        "risk": 58,
+        "workload": 59
+      },
+      {
+        "month": "W3",
+        "risk": 40,
+        "workload": 70
+      },
+      {
+        "month": "W4",
+        "risk": 75,
+        "workload": 79
+      },
+      {
+        "month": "W5",
+        "risk": 77,
+        "workload": 90
+      },
+      {
+        "month": "W6",
+        "risk": 82,
+        "workload": 100
+      }
+    ],
+    "radarProfile": [
+      91,
+      93,
+      95,
+      12,
+      10,
+      70
+    ]
+  },
+  {
+    "id": "CRK-7428",
+    "name": "BB McCullum",
+    "team": "NZ",
+    "role": "BAT",
+    "age": 38,
+    "avg": 35.66,
+    "sr": 136.21,
+    "rating": 9.3,
+    "injuryRisk": 27,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 24,
+        "workload": 41
+      },
+      {
+        "month": "W2",
+        "risk": 17,
+        "workload": 42
+      },
+      {
+        "month": "W3",
+        "risk": 15,
+        "workload": 46
+      },
+      {
+        "month": "W4",
+        "risk": 27,
+        "workload": 48
+      },
+      {
+        "month": "W5",
+        "risk": 20,
+        "workload": 43
+      },
+      {
+        "month": "W6",
+        "risk": 27,
+        "workload": 55
+      }
+    ],
+    "radarProfile": [
+      78,
+      93,
+      90,
+      30,
+      20,
+      60
+    ]
+  },
+  {
+    "id": "CRK-7199",
+    "name": "Sami Sohail",
+    "team": "MWI",
+    "role": "BAT",
+    "age": 32,
+    "avg": 45.76,
+    "sr": 126.27,
+    "rating": 8.1,
+    "injuryRisk": 68,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 28,
+        "workload": 40
+      },
+      {
+        "month": "W2",
+        "risk": 13,
+        "workload": 53
+      },
+      {
+        "month": "W3",
+        "risk": 57,
+        "workload": 60
+      },
+      {
+        "month": "W4",
+        "risk": 45,
+        "workload": 71
+      },
+      {
+        "month": "W5",
+        "risk": 68,
+        "workload": 82
+      },
+      {
+        "month": "W6",
+        "risk": 63,
+        "workload": 80
+      }
+    ],
+    "radarProfile": [
+      86,
+      83,
+      78,
+      18,
+      7,
+      69
+    ]
+  },
+  {
+    "id": "CRK-5578",
+    "name": "R Sandaruwan",
+    "team": "KUW",
+    "role": "BAT",
+    "age": 32,
+    "avg": 27.19,
+    "sr": 145.82,
+    "rating": 8.5,
+    "injuryRisk": 92,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 50,
+        "workload": 65
+      },
+      {
+        "month": "W2",
+        "risk": 92,
+        "workload": 82
+      },
+      {
+        "month": "W3",
+        "risk": 63,
+        "workload": 94
+      },
+      {
+        "month": "W4",
+        "risk": 65,
+        "workload": 100
+      },
+      {
+        "month": "W5",
+        "risk": 82,
+        "workload": 92
+      },
+      {
+        "month": "W6",
+        "risk": 86,
+        "workload": 100
+      }
+    ],
+    "radarProfile": [
+      93,
+      75,
+      72,
+      15,
+      10,
+      89
+    ]
+  },
+  {
+    "id": "CRK-8506",
+    "name": "Rashid Khan",
+    "team": "AFG/ICC",
+    "role": "SPIN",
+    "age": 29,
+    "avg": 13.73,
+    "sr": 6.04,
+    "rating": 8.0,
+    "injuryRisk": 95,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 34,
+        "workload": 73
+      },
+      {
+        "month": "W2",
+        "risk": 95,
+        "workload": 85
+      },
+      {
+        "month": "W3",
+        "risk": 72,
+        "workload": 100
+      },
+      {
+        "month": "W4",
+        "risk": 68,
+        "workload": 100
+      },
+      {
+        "month": "W5",
+        "risk": 61,
+        "workload": 94
+      },
+      {
+        "month": "W6",
+        "risk": 79,
+        "workload": 100
+      }
+    ],
+    "radarProfile": [
+      19,
+      17,
+      38,
+      75,
+      92,
+      81
+    ]
+  },
+  {
+    "id": "CRK-3360",
+    "name": "IS Sodhi",
+    "team": "NZ",
+    "role": "PACE",
+    "age": 26,
+    "avg": 23.01,
+    "sr": 8.16,
+    "rating": 8.2,
+    "injuryRisk": 59,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 12,
+        "workload": 35
+      },
+      {
+        "month": "W2",
+        "risk": 6,
+        "workload": 54
+      },
+      {
+        "month": "W3",
+        "risk": 28,
+        "workload": 43
+      },
+      {
+        "month": "W4",
+        "risk": 59,
+        "workload": 56
+      },
+      {
+        "month": "W5",
+        "risk": 47,
+        "workload": 63
+      },
+      {
+        "month": "W6",
+        "risk": 56,
+        "workload": 58
+      }
+    ],
+    "radarProfile": [
+      29,
+      39,
+      12,
+      73,
+      79,
+      78
+    ]
+  },
+  {
+    "id": "CRK-6564",
+    "name": "TG Southee",
+    "team": "NZ",
+    "role": "SPIN",
+    "age": 28,
+    "avg": 22.38,
+    "sr": 8.0,
+    "rating": 7.9,
+    "injuryRisk": 82,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 9,
+        "workload": 43
+      },
+      {
+        "month": "W2",
+        "risk": 44,
+        "workload": 63
+      },
+      {
+        "month": "W3",
+        "risk": 42,
+        "workload": 62
+      },
+      {
+        "month": "W4",
+        "risk": 82,
+        "workload": 77
+      },
+      {
+        "month": "W5",
+        "risk": 34,
+        "workload": 64
+      },
+      {
+        "month": "W6",
+        "risk": 34,
+        "workload": 65
+      }
+    ],
+    "radarProfile": [
+      40,
+      19,
+      30,
+      81,
+      94,
+      82
+    ]
+  },
+  {
+    "id": "CRK-6961",
+    "name": "AU Rashid",
+    "team": "ENG",
+    "role": "PACE",
+    "age": 29,
+    "avg": 23.24,
+    "sr": 7.48,
+    "rating": 7.1,
+    "injuryRisk": 73,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 12,
+        "workload": 50
+      },
+      {
+        "month": "W2",
+        "risk": 21,
+        "workload": 48
+      },
+      {
+        "month": "W3",
+        "risk": 9,
+        "workload": 44
+      },
+      {
+        "month": "W4",
+        "risk": 37,
+        "workload": 58
+      },
+      {
+        "month": "W5",
+        "risk": 73,
+        "workload": 76
+      },
+      {
+        "month": "W6",
+        "risk": 64,
+        "workload": 96
+      }
+    ],
+    "radarProfile": [
+      12,
+      33,
+      30,
+      94,
+      73,
+      74
+    ]
+  },
+  {
+    "id": "CRK-4045",
+    "name": "Mustafizur Rahman",
+    "team": "BAN",
+    "role": "SPIN",
+    "age": 31,
+    "avg": 20.96,
+    "sr": 7.28,
+    "rating": 7.4,
+    "injuryRisk": 29,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 15,
+        "workload": 47
+      },
+      {
+        "month": "W2",
+        "risk": 29,
+        "workload": 34
+      },
+      {
+        "month": "W3",
+        "risk": 28,
+        "workload": 34
+      },
+      {
+        "month": "W4",
+        "risk": 29,
+        "workload": 32
+      },
+      {
+        "month": "W5",
+        "risk": 20,
+        "workload": 20
+      },
+      {
+        "month": "W6",
+        "risk": 13,
+        "workload": 10
+      }
+    ],
+    "radarProfile": [
+      32,
+      43,
+      31,
+      90,
+      90,
+      76
+    ]
+  },
+  {
+    "id": "CRK-8040",
+    "name": "PW Hasaranga",
+    "team": "SL",
+    "role": "PACE",
+    "age": 24,
+    "avg": 16.05,
+    "sr": 7.02,
+    "rating": 7.8,
+    "injuryRisk": 82,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 5,
+        "workload": 43
+      },
+      {
+        "month": "W2",
+        "risk": 35,
+        "workload": 61
+      },
+      {
+        "month": "W3",
+        "risk": 17,
+        "workload": 52
+      },
+      {
+        "month": "W4",
+        "risk": 35,
+        "workload": 61
+      },
+      {
+        "month": "W5",
+        "risk": 82,
+        "workload": 77
+      },
+      {
+        "month": "W6",
+        "risk": 78,
+        "workload": 94
+      }
+    ],
+    "radarProfile": [
+      36,
+      25,
+      32,
+      86,
+      78,
+      59
+    ]
+  },
+  {
+    "id": "CRK-8823",
+    "name": "A Zampa",
+    "team": "AUS",
+    "role": "SPIN",
+    "age": 33,
+    "avg": 20.63,
+    "sr": 7.37,
+    "rating": 7.0,
+    "injuryRisk": 27,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 7,
+        "workload": 33
+      },
+      {
+        "month": "W2",
+        "risk": 25,
+        "workload": 48
+      },
+      {
+        "month": "W3",
+        "risk": 5,
+        "workload": 38
+      },
+      {
+        "month": "W4",
+        "risk": 27,
+        "workload": 50
+      },
+      {
+        "month": "W5",
+        "risk": 15,
+        "workload": 35
+      },
+      {
+        "month": "W6",
+        "risk": 18,
+        "workload": 21
+      }
+    ],
+    "radarProfile": [
+      25,
+      23,
+      20,
+      92,
+      72,
+      60
+    ]
+  },
+  {
+    "id": "CRK-7201",
+    "name": "MR Adair",
+    "team": "IRE",
+    "role": "PACE",
+    "age": 27,
+    "avg": 19.8,
+    "sr": 7.82,
+    "rating": 9.1,
+    "injuryRisk": 56,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 28,
+        "workload": 49
+      },
+      {
+        "month": "W2",
+        "risk": 46,
+        "workload": 66
+      },
+      {
+        "month": "W3",
+        "risk": 51,
+        "workload": 68
+      },
+      {
+        "month": "W4",
+        "risk": 56,
+        "workload": 60
+      },
+      {
+        "month": "W5",
+        "risk": 17,
+        "workload": 49
+      },
+      {
+        "month": "W6",
+        "risk": 53,
+        "workload": 61
+      }
+    ],
+    "radarProfile": [
+      12,
+      42,
+      17,
+      73,
+      90,
+      82
+    ]
+  },
+  {
+    "id": "CRK-8037",
+    "name": "MJ Santner",
+    "team": "NZ",
+    "role": "SPIN",
+    "age": 29,
+    "avg": 23.85,
+    "sr": 7.17,
+    "rating": 8.8,
+    "injuryRisk": 20,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 10,
+        "workload": 24
+      },
+      {
+        "month": "W2",
+        "risk": 5,
+        "workload": 10
+      },
+      {
+        "month": "W3",
+        "risk": 9,
+        "workload": 18
+      },
+      {
+        "month": "W4",
+        "risk": 15,
+        "workload": 10
+      },
+      {
+        "month": "W5",
+        "risk": 17,
+        "workload": 14
+      },
+      {
+        "month": "W6",
+        "risk": 20,
+        "workload": 14
+      }
+    ],
+    "radarProfile": [
+      11,
+      46,
+      38,
+      80,
+      77,
+      68
+    ]
+  },
+  {
+    "id": "CRK-2635",
+    "name": "Rizwan Butt",
+    "team": "BHR",
+    "role": "SPIN",
+    "age": 36,
+    "avg": 16.28,
+    "sr": 6.81,
+    "rating": 9.7,
+    "injuryRisk": 55,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 26,
+        "workload": 55
+      },
+      {
+        "month": "W2",
+        "risk": 30,
+        "workload": 56
+      },
+      {
+        "month": "W3",
+        "risk": 29,
+        "workload": 49
+      },
+      {
+        "month": "W4",
+        "risk": 48,
+        "workload": 68
+      },
+      {
+        "month": "W5",
+        "risk": 44,
+        "workload": 74
+      },
+      {
+        "month": "W6",
+        "risk": 55,
+        "workload": 70
+      }
+    ],
+    "radarProfile": [
+      37,
+      36,
+      19,
+      76,
+      76,
+      52
+    ]
+  },
+  {
+    "id": "CRK-1669",
+    "name": "S Lamichhane",
+    "team": "ICC/NEP",
+    "role": "SPIN",
+    "age": 30,
+    "avg": 12.52,
+    "sr": 6.11,
+    "rating": 8.7,
+    "injuryRisk": 45,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 15,
+        "workload": 38
+      },
+      {
+        "month": "W2",
+        "risk": 26,
+        "workload": 37
+      },
+      {
+        "month": "W3",
+        "risk": 12,
+        "workload": 41
+      },
+      {
+        "month": "W4",
+        "risk": 26,
+        "workload": 49
+      },
+      {
+        "month": "W5",
+        "risk": 45,
+        "workload": 61
+      },
+      {
+        "month": "W6",
+        "risk": 23,
+        "workload": 52
+      }
+    ],
+    "radarProfile": [
+      35,
+      37,
+      17,
+      85,
+      83,
+      54
+    ]
+  },
+  {
+    "id": "CRK-3522",
+    "name": "Shaheen Shah Afridi",
+    "team": "PAK",
+    "role": "PACE",
+    "age": 30,
+    "avg": 21.35,
+    "sr": 7.83,
+    "rating": 7.7,
+    "injuryRisk": 26,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 6,
+        "workload": 24
+      },
+      {
+        "month": "W2",
+        "risk": 19,
+        "workload": 37
+      },
+      {
+        "month": "W3",
+        "risk": 19,
+        "workload": 51
+      },
+      {
+        "month": "W4",
+        "risk": 21,
+        "workload": 52
+      },
+      {
+        "month": "W5",
+        "risk": 26,
+        "workload": 38
+      },
+      {
+        "month": "W6",
+        "risk": 13,
+        "workload": 55
+      }
+    ],
+    "radarProfile": [
+      32,
+      35,
+      19,
+      85,
+      94,
+      65
+    ]
+  },
+  {
+    "id": "CRK-4515",
+    "name": "Ehsan Khan",
+    "team": "HKG",
+    "role": "SPIN",
+    "age": 22,
+    "avg": 16.94,
+    "sr": 6.22,
+    "rating": 8.2,
+    "injuryRisk": 88,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 26,
+        "workload": 43
+      },
+      {
+        "month": "W2",
+        "risk": 17,
+        "workload": 55
+      },
+      {
+        "month": "W3",
+        "risk": 29,
+        "workload": 53
+      },
+      {
+        "month": "W4",
+        "risk": 56,
+        "workload": 72
+      },
+      {
+        "month": "W5",
+        "risk": 88,
+        "workload": 82
+      },
+      {
+        "month": "W6",
+        "risk": 76,
+        "workload": 80
+      }
+    ],
+    "radarProfile": [
+      23,
+      13,
+      34,
+      71,
+      95,
+      72
+    ]
+  },
+  {
+    "id": "CRK-6484",
+    "name": "Haris Rauf",
+    "team": "PAK",
+    "role": "PACE",
+    "age": 36,
+    "avg": 21.1,
+    "sr": 8.38,
+    "rating": 8.3,
+    "injuryRisk": 92,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 37,
+        "workload": 68
+      },
+      {
+        "month": "W2",
+        "risk": 32,
+        "workload": 66
+      },
+      {
+        "month": "W3",
+        "risk": 91,
+        "workload": 76
+      },
+      {
+        "month": "W4",
+        "risk": 84,
+        "workload": 83
+      },
+      {
+        "month": "W5",
+        "risk": 92,
+        "workload": 79
+      },
+      {
+        "month": "W6",
+        "risk": 41,
+        "workload": 64
+      }
+    ],
+    "radarProfile": [
+      25,
+      34,
+      24,
+      93,
+      87,
+      61
+    ]
+  },
+  {
+    "id": "CRK-5783",
+    "name": "Arshdeep Singh",
+    "team": "IND",
+    "role": "SPIN",
+    "age": 20,
+    "avg": 19.7,
+    "sr": 8.52,
+    "rating": 9.6,
+    "injuryRisk": 48,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 21,
+        "workload": 49
+      },
+      {
+        "month": "W2",
+        "risk": 38,
+        "workload": 67
+      },
+      {
+        "month": "W3",
+        "risk": 44,
+        "workload": 73
+      },
+      {
+        "month": "W4",
+        "risk": 48,
+        "workload": 71
+      },
+      {
+        "month": "W5",
+        "risk": 46,
+        "workload": 56
+      },
+      {
+        "month": "W6",
+        "risk": 15,
+        "workload": 49
+      }
+    ],
+    "radarProfile": [
+      22,
+      41,
+      34,
+      77,
+      74,
+      70
+    ]
+  },
+  {
+    "id": "CRK-6033",
+    "name": "Junaid Siddique",
+    "team": "UAE",
+    "role": "PACE",
+    "age": 31,
+    "avg": 20.33,
+    "sr": 7.63,
+    "rating": 8.1,
+    "injuryRisk": 55,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 27,
+        "workload": 52
+      },
+      {
+        "month": "W2",
+        "risk": 55,
+        "workload": 63
+      },
+      {
+        "month": "W3",
+        "risk": 44,
+        "workload": 68
+      },
+      {
+        "month": "W4",
+        "risk": 43,
+        "workload": 57
+      },
+      {
+        "month": "W5",
+        "risk": 5,
+        "workload": 50
+      },
+      {
+        "month": "W6",
+        "risk": 38,
+        "workload": 68
+      }
+    ],
+    "radarProfile": [
+      15,
+      29,
+      40,
+      89,
+      80,
+      59
+    ]
+  },
+  {
+    "id": "CRK-8358",
+    "name": "H Ssenyondo",
+    "team": "UGA",
+    "role": "PACE",
+    "age": 25,
+    "avg": 13.55,
+    "sr": 5.25,
+    "rating": 7.2,
+    "injuryRisk": 93,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 22,
+        "workload": 43
+      },
+      {
+        "month": "W2",
+        "risk": 7,
+        "workload": 50
+      },
+      {
+        "month": "W3",
+        "risk": 58,
+        "workload": 58
+      },
+      {
+        "month": "W4",
+        "risk": 93,
+        "workload": 76
+      },
+      {
+        "month": "W5",
+        "risk": 38,
+        "workload": 75
+      },
+      {
+        "month": "W6",
+        "risk": 88,
+        "workload": 86
+      }
+    ],
+    "radarProfile": [
+      16,
+      36,
+      22,
+      88,
+      70,
+      75
+    ]
+  },
+  {
+    "id": "CRK-6063",
+    "name": "Shadab Khan",
+    "team": "PAK",
+    "role": "PACE",
+    "age": 30,
+    "avg": 24.31,
+    "sr": 7.4,
+    "rating": 7.3,
+    "injuryRisk": 39,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 8,
+        "workload": 24
+      },
+      {
+        "month": "W2",
+        "risk": 18,
+        "workload": 21
+      },
+      {
+        "month": "W3",
+        "risk": 27,
+        "workload": 14
+      },
+      {
+        "month": "W4",
+        "risk": 17,
+        "workload": 23
+      },
+      {
+        "month": "W5",
+        "risk": 9,
+        "workload": 42
+      },
+      {
+        "month": "W6",
+        "risk": 39,
+        "workload": 62
+      }
+    ],
+    "radarProfile": [
+      35,
+      45,
+      31,
+      84,
+      95,
+      74
+    ]
+  },
+  {
+    "id": "CRK-9237",
+    "name": "JJ Bumrah",
+    "team": "IND",
+    "role": "SPIN",
+    "age": 21,
+    "avg": 18.08,
+    "sr": 6.51,
+    "rating": 9.3,
+    "injuryRisk": 94,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 36,
+        "workload": 67
+      },
+      {
+        "month": "W2",
+        "risk": 26,
+        "workload": 54
+      },
+      {
+        "month": "W3",
+        "risk": 5,
+        "workload": 48
+      },
+      {
+        "month": "W4",
+        "risk": 54,
+        "workload": 66
+      },
+      {
+        "month": "W5",
+        "risk": 94,
+        "workload": 86
+      },
+      {
+        "month": "W6",
+        "risk": 90,
+        "workload": 100
+      }
+    ],
+    "radarProfile": [
+      37,
+      20,
+      35,
+      72,
+      76,
+      71
+    ]
+  },
+  {
+    "id": "CRK-1968",
+    "name": "SO Ngoche",
+    "team": "KENYA",
+    "role": "SPIN",
+    "age": 32,
+    "avg": 17.15,
+    "sr": 5.87,
+    "rating": 7.1,
+    "injuryRisk": 80,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 32,
+        "workload": 56
+      },
+      {
+        "month": "W2",
+        "risk": 53,
+        "workload": 66
+      },
+      {
+        "month": "W3",
+        "risk": 45,
+        "workload": 69
+      },
+      {
+        "month": "W4",
+        "risk": 67,
+        "workload": 84
+      },
+      {
+        "month": "W5",
+        "risk": 78,
+        "workload": 95
+      },
+      {
+        "month": "W6",
+        "risk": 80,
+        "workload": 100
+      }
+    ],
+    "radarProfile": [
+      34,
+      45,
+      31,
+      82,
+      71,
+      60
+    ]
+  },
+  {
+    "id": "CRK-4355",
+    "name": "Ali Dawood",
+    "team": "BHR",
+    "role": "SPIN",
+    "age": 26,
+    "avg": 14.37,
+    "sr": 6.17,
+    "rating": 9.9,
+    "injuryRisk": 73,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 13,
+        "workload": 47
+      },
+      {
+        "month": "W2",
+        "risk": 44,
+        "workload": 66
+      },
+      {
+        "month": "W3",
+        "risk": 69,
+        "workload": 77
+      },
+      {
+        "month": "W4",
+        "risk": 39,
+        "workload": 69
+      },
+      {
+        "month": "W5",
+        "risk": 73,
+        "workload": 77
+      },
+      {
+        "month": "W6",
+        "risk": 63,
+        "workload": 81
+      }
+    ],
+    "radarProfile": [
+      13,
+      36,
+      21,
+      71,
+      79,
+      53
+    ]
+  },
+  {
+    "id": "CRK-7059",
+    "name": "R Ngarava",
+    "team": "ZIM",
+    "role": "PACE",
+    "age": 30,
+    "avg": 21.36,
+    "sr": 7.41,
+    "rating": 9.8,
+    "injuryRisk": 64,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 10,
+        "workload": 49
+      },
+      {
+        "month": "W2",
+        "risk": 32,
+        "workload": 59
+      },
+      {
+        "month": "W3",
+        "risk": 25,
+        "workload": 45
+      },
+      {
+        "month": "W4",
+        "risk": 43,
+        "workload": 64
+      },
+      {
+        "month": "W5",
+        "risk": 64,
+        "workload": 80
+      },
+      {
+        "month": "W6",
+        "risk": 57,
+        "workload": 69
+      }
+    ],
+    "radarProfile": [
+      22,
+      40,
+      33,
+      89,
+      90,
+      66
+    ]
+  },
+  {
+    "id": "CRK-7174",
+    "name": "Bilal Khan",
+    "team": "OMA",
+    "role": "SPIN",
+    "age": 35,
+    "avg": 17.44,
+    "sr": 6.78,
+    "rating": 7.5,
+    "injuryRisk": 54,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 5,
+        "workload": 29
+      },
+      {
+        "month": "W2",
+        "risk": 7,
+        "workload": 18
+      },
+      {
+        "month": "W3",
+        "risk": 14,
+        "workload": 19
+      },
+      {
+        "month": "W4",
+        "risk": 29,
+        "workload": 39
+      },
+      {
+        "month": "W5",
+        "risk": 29,
+        "workload": 50
+      },
+      {
+        "month": "W6",
+        "risk": 54,
+        "workload": 66
+      }
+    ],
+    "radarProfile": [
+      33,
+      25,
+      23,
+      88,
+      75,
+      53
+    ]
+  },
+  {
+    "id": "CRK-9042",
+    "name": "JO Holder",
+    "team": "WI",
+    "role": "PACE",
+    "age": 35,
+    "avg": 27.02,
+    "sr": 8.7,
+    "rating": 9.9,
+    "injuryRisk": 73,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 12,
+        "workload": 55
+      },
+      {
+        "month": "W2",
+        "risk": 24,
+        "workload": 48
+      },
+      {
+        "month": "W3",
+        "risk": 36,
+        "workload": 61
+      },
+      {
+        "month": "W4",
+        "risk": 53,
+        "workload": 71
+      },
+      {
+        "month": "W5",
+        "risk": 43,
+        "workload": 68
+      },
+      {
+        "month": "W6",
+        "risk": 73,
+        "workload": 81
+      }
+    ],
+    "radarProfile": [
+      31,
+      44,
+      11,
+      85,
+      77,
+      77
+    ]
+  },
+  {
+    "id": "CRK-9231",
+    "name": "CJ Jordan",
+    "team": "ENG",
+    "role": "PACE",
+    "age": 26,
+    "avg": 26.36,
+    "sr": 8.74,
+    "rating": 8.4,
+    "injuryRisk": 82,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 15,
+        "workload": 50
+      },
+      {
+        "month": "W2",
+        "risk": 42,
+        "workload": 70
+      },
+      {
+        "month": "W3",
+        "risk": 74,
+        "workload": 90
+      },
+      {
+        "month": "W4",
+        "risk": 75,
+        "workload": 96
+      },
+      {
+        "month": "W5",
+        "risk": 73,
+        "workload": 100
+      },
+      {
+        "month": "W6",
+        "risk": 82,
+        "workload": 100
+      }
+    ],
+    "radarProfile": [
+      24,
+      14,
+      35,
+      77,
+      84,
+      58
+    ]
+  },
+  {
+    "id": "CRK-4357",
+    "name": "Pavandeep Singh",
+    "team": "MAS",
+    "role": "SPIN",
+    "age": 36,
+    "avg": 17.5,
+    "sr": 5.81,
+    "rating": 9.1,
+    "injuryRisk": 73,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 28,
+        "workload": 37
+      },
+      {
+        "month": "W2",
+        "risk": 17,
+        "workload": 49
+      },
+      {
+        "month": "W3",
+        "risk": 45,
+        "workload": 65
+      },
+      {
+        "month": "W4",
+        "risk": 34,
+        "workload": 75
+      },
+      {
+        "month": "W5",
+        "risk": 60,
+        "workload": 91
+      },
+      {
+        "month": "W6",
+        "risk": 73,
+        "workload": 91
+      }
+    ],
+    "radarProfile": [
+      29,
+      40,
+      12,
+      73,
+      93,
+      51
+    ]
+  },
+  {
+    "id": "CRK-5269",
+    "name": "SL Malinga",
+    "team": "SL",
+    "role": "PACE",
+    "age": 33,
+    "avg": 20.79,
+    "sr": 7.42,
+    "rating": 9.7,
+    "injuryRisk": 31,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 23,
+        "workload": 31
+      },
+      {
+        "month": "W2",
+        "risk": 10,
+        "workload": 31
+      },
+      {
+        "month": "W3",
+        "risk": 5,
+        "workload": 43
+      },
+      {
+        "month": "W4",
+        "risk": 31,
+        "workload": 58
+      },
+      {
+        "month": "W5",
+        "risk": 5,
+        "workload": 54
+      },
+      {
+        "month": "W6",
+        "risk": 28,
+        "workload": 39
+      }
+    ],
+    "radarProfile": [
+      32,
+      13,
+      10,
+      81,
+      81,
+      85
+    ]
+  },
+  {
+    "id": "CRK-2235",
+    "name": "Karan KC",
+    "team": "NEP",
+    "role": "PACE",
+    "age": 20,
+    "avg": 20.75,
+    "sr": 7.76,
+    "rating": 7.2,
+    "injuryRisk": 93,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 54,
+        "workload": 66
+      },
+      {
+        "month": "W2",
+        "risk": 41,
+        "workload": 62
+      },
+      {
+        "month": "W3",
+        "risk": 54,
+        "workload": 67
+      },
+      {
+        "month": "W4",
+        "risk": 45,
+        "workload": 65
+      },
+      {
+        "month": "W5",
+        "risk": 32,
+        "workload": 57
+      },
+      {
+        "month": "W6",
+        "risk": 93,
+        "workload": 77
+      }
+    ],
+    "radarProfile": [
+      22,
+      39,
+      27,
+      91,
+      85,
+      72
+    ]
+  },
+  {
+    "id": "CRK-7498",
+    "name": "B Muzarabani",
+    "team": "ZIM",
+    "role": "PACE",
+    "age": 22,
+    "avg": 21.34,
+    "sr": 7.24,
+    "rating": 7.5,
+    "injuryRisk": 50,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 50,
+        "workload": 64
+      },
+      {
+        "month": "W2",
+        "risk": 7,
+        "workload": 55
+      },
+      {
+        "month": "W3",
+        "risk": 12,
+        "workload": 40
+      },
+      {
+        "month": "W4",
+        "risk": 23,
+        "workload": 30
+      },
+      {
+        "month": "W5",
+        "risk": 16,
+        "workload": 36
+      },
+      {
+        "month": "W6",
+        "risk": 8,
+        "workload": 37
+      }
+    ],
+    "radarProfile": [
+      34,
+      34,
+      35,
+      84,
+      74,
+      68
+    ]
+  },
+  {
+    "id": "CRK-4952",
+    "name": "Taskin Ahmed",
+    "team": "BAN",
+    "role": "SPIN",
+    "age": 20,
+    "avg": 22.19,
+    "sr": 7.75,
+    "rating": 7.6,
+    "injuryRisk": 85,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 48,
+        "workload": 63
+      },
+      {
+        "month": "W2",
+        "risk": 85,
+        "workload": 81
+      },
+      {
+        "month": "W3",
+        "risk": 84,
+        "workload": 86
+      },
+      {
+        "month": "W4",
+        "risk": 49,
+        "workload": 73
+      },
+      {
+        "month": "W5",
+        "risk": 49,
+        "workload": 61
+      },
+      {
+        "month": "W6",
+        "risk": 32,
+        "workload": 67
+      }
+    ],
+    "radarProfile": [
+      24,
+      20,
+      36,
+      87,
+      95,
+      69
+    ]
+  },
+  {
+    "id": "CRK-7924",
+    "name": "AR Ramjani",
+    "team": "UGA",
+    "role": "PACE",
+    "age": 27,
+    "avg": 10.49,
+    "sr": 4.79,
+    "rating": 7.2,
+    "injuryRisk": 79,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 45,
+        "workload": 73
+      },
+      {
+        "month": "W2",
+        "risk": 48,
+        "workload": 73
+      },
+      {
+        "month": "W3",
+        "risk": 32,
+        "workload": 65
+      },
+      {
+        "month": "W4",
+        "risk": 63,
+        "workload": 80
+      },
+      {
+        "month": "W5",
+        "risk": 50,
+        "workload": 69
+      },
+      {
+        "month": "W6",
+        "risk": 79,
+        "workload": 79
+      }
+    ],
+    "radarProfile": [
+      32,
+      23,
+      22,
+      80,
+      78,
+      81
+    ]
+  },
+  {
+    "id": "CRK-3199",
+    "name": "Aizaz Khan",
+    "team": "HKG",
+    "role": "SPIN",
+    "age": 22,
+    "avg": 21.46,
+    "sr": 7.88,
+    "rating": 9.0,
+    "injuryRisk": 52,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 52,
+        "workload": 58
+      },
+      {
+        "month": "W2",
+        "risk": 18,
+        "workload": 50
+      },
+      {
+        "month": "W3",
+        "risk": 20,
+        "workload": 36
+      },
+      {
+        "month": "W4",
+        "risk": 11,
+        "workload": 42
+      },
+      {
+        "month": "W5",
+        "risk": 14,
+        "workload": 28
+      },
+      {
+        "month": "W6",
+        "risk": 23,
+        "workload": 32
+      }
+    ],
+    "radarProfile": [
+      28,
+      50,
+      26,
+      85,
+      85,
+      72
+    ]
+  },
+  {
+    "id": "CRK-6108",
+    "name": "Mohammad Nawaz",
+    "team": "3",
+    "role": "PACE",
+    "age": 35,
+    "avg": 20.88,
+    "sr": 7.18,
+    "rating": 9.3,
+    "injuryRisk": 58,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 14,
+        "workload": 39
+      },
+      {
+        "month": "W2",
+        "risk": 12,
+        "workload": 53
+      },
+      {
+        "month": "W3",
+        "risk": 32,
+        "workload": 58
+      },
+      {
+        "month": "W4",
+        "risk": 52,
+        "workload": 57
+      },
+      {
+        "month": "W5",
+        "risk": 58,
+        "workload": 73
+      },
+      {
+        "month": "W6",
+        "risk": 46,
+        "workload": 67
+      }
+    ],
+    "radarProfile": [
+      14,
+      26,
+      23,
+      74,
+      70,
+      82
+    ]
+  },
+  {
+    "id": "CRK-3447",
+    "name": "Z Bimenyimana",
+    "team": "RWN",
+    "role": "SPIN",
+    "age": 38,
+    "avg": 22.27,
+    "sr": 7.14,
+    "rating": 9.0,
+    "injuryRisk": 73,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 30,
+        "workload": 68
+      },
+      {
+        "month": "W2",
+        "risk": 61,
+        "workload": 86
+      },
+      {
+        "month": "W3",
+        "risk": 73,
+        "workload": 94
+      },
+      {
+        "month": "W4",
+        "risk": 61,
+        "workload": 83
+      },
+      {
+        "month": "W5",
+        "risk": 70,
+        "workload": 80
+      },
+      {
+        "month": "W6",
+        "risk": 48,
+        "workload": 67
+      }
+    ],
+    "radarProfile": [
+      28,
+      42,
+      22,
+      74,
+      77,
+      84
+    ]
+  },
+  {
+    "id": "CRK-7125",
+    "name": "Shahid Afridi",
+    "team": "ICC/PAK",
+    "role": "PACE",
+    "age": 28,
+    "avg": 24.44,
+    "sr": 6.63,
+    "rating": 7.3,
+    "injuryRisk": 47,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 12,
+        "workload": 52
+      },
+      {
+        "month": "W2",
+        "risk": 13,
+        "workload": 52
+      },
+      {
+        "month": "W3",
+        "risk": 8,
+        "workload": 44
+      },
+      {
+        "month": "W4",
+        "risk": 47,
+        "workload": 60
+      },
+      {
+        "month": "W5",
+        "risk": 39,
+        "workload": 61
+      },
+      {
+        "month": "W6",
+        "risk": 28,
+        "workload": 48
+      }
+    ],
+    "radarProfile": [
+      16,
+      45,
+      28,
+      72,
+      77,
+      58
+    ]
+  },
+  {
+    "id": "CRK-1524",
+    "name": "Aqib Iqbal",
+    "team": "AUT",
+    "role": "PACE",
+    "age": 21,
+    "avg": 21.87,
+    "sr": 6.86,
+    "rating": 7.4,
+    "injuryRisk": 71,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 6,
+        "workload": 42
+      },
+      {
+        "month": "W2",
+        "risk": 17,
+        "workload": 28
+      },
+      {
+        "month": "W3",
+        "risk": 6,
+        "workload": 36
+      },
+      {
+        "month": "W4",
+        "risk": 12,
+        "workload": 43
+      },
+      {
+        "month": "W5",
+        "risk": 36,
+        "workload": 61
+      },
+      {
+        "month": "W6",
+        "risk": 71,
+        "workload": 77
+      }
+    ],
+    "radarProfile": [
+      15,
+      24,
+      19,
+      79,
+      70,
+      62
+    ]
+  },
+  {
+    "id": "CRK-4238",
+    "name": "AR Patel",
+    "team": "IND",
+    "role": "SPIN",
+    "age": 30,
+    "avg": 21.42,
+    "sr": 7.4,
+    "rating": 7.8,
+    "injuryRisk": 43,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 23,
+        "workload": 39
+      },
+      {
+        "month": "W2",
+        "risk": 28,
+        "workload": 33
+      },
+      {
+        "month": "W3",
+        "risk": 7,
+        "workload": 53
+      },
+      {
+        "month": "W4",
+        "risk": 43,
+        "workload": 63
+      },
+      {
+        "month": "W5",
+        "risk": 18,
+        "workload": 55
+      },
+      {
+        "month": "W6",
+        "risk": 14,
+        "workload": 51
+      }
+    ],
+    "radarProfile": [
+      10,
+      39,
+      21,
+      83,
+      73,
+      64
+    ]
+  },
+  {
+    "id": "CRK-2784",
+    "name": "YS Chahal",
+    "team": "IND",
+    "role": "PACE",
+    "age": 25,
+    "avg": 25.09,
+    "sr": 8.19,
+    "rating": 8.9,
+    "injuryRisk": 29,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 24,
+        "workload": 31
+      },
+      {
+        "month": "W2",
+        "risk": 19,
+        "workload": 20
+      },
+      {
+        "month": "W3",
+        "risk": 29,
+        "workload": 40
+      },
+      {
+        "month": "W4",
+        "risk": 5,
+        "workload": 32
+      },
+      {
+        "month": "W5",
+        "risk": 19,
+        "workload": 52
+      },
+      {
+        "month": "W6",
+        "risk": 29,
+        "workload": 55
+      }
+    ],
+    "radarProfile": [
+      25,
+      30,
+      11,
+      86,
+      71,
+      70
+    ]
+  },
+  {
+    "id": "CRK-9671",
+    "name": "DM Nakrani",
+    "team": "UGA",
+    "role": "SPIN",
+    "age": 33,
+    "avg": 15.29,
+    "sr": 5.68,
+    "rating": 8.4,
+    "injuryRisk": 25,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 25,
+        "workload": 34
+      },
+      {
+        "month": "W2",
+        "risk": 22,
+        "workload": 20
+      },
+      {
+        "month": "W3",
+        "risk": 10,
+        "workload": 32
+      },
+      {
+        "month": "W4",
+        "risk": 24,
+        "workload": 46
+      },
+      {
+        "month": "W5",
+        "risk": 11,
+        "workload": 33
+      },
+      {
+        "month": "W6",
+        "risk": 21,
+        "workload": 35
+      }
+    ],
+    "radarProfile": [
+      14,
+      50,
+      12,
+      91,
+      88,
+      61
+    ]
+  },
+  {
+    "id": "CRK-9884",
+    "name": "M Akayezu",
+    "team": "RWN",
+    "role": "PACE",
+    "age": 33,
+    "avg": 21.67,
+    "sr": 7.86,
+    "rating": 7.3,
+    "injuryRisk": 39,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 22,
+        "workload": 25
+      },
+      {
+        "month": "W2",
+        "risk": 9,
+        "workload": 27
+      },
+      {
+        "month": "W3",
+        "risk": 28,
+        "workload": 31
+      },
+      {
+        "month": "W4",
+        "risk": 11,
+        "workload": 51
+      },
+      {
+        "month": "W5",
+        "risk": 17,
+        "workload": 47
+      },
+      {
+        "month": "W6",
+        "risk": 39,
+        "workload": 62
+      }
+    ],
+    "radarProfile": [
+      30,
+      20,
+      14,
+      91,
+      91,
+      66
+    ]
+  },
+  {
+    "id": "CRK-7353",
+    "name": "F Banunaek",
+    "team": "INA",
+    "role": "SPIN",
+    "age": 36,
+    "avg": 22.43,
+    "sr": 6.97,
+    "rating": 7.9,
+    "injuryRisk": 29,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 29,
+        "workload": 30
+      },
+      {
+        "month": "W2",
+        "risk": 28,
+        "workload": 25
+      },
+      {
+        "month": "W3",
+        "risk": 28,
+        "workload": 17
+      },
+      {
+        "month": "W4",
+        "risk": 26,
+        "workload": 31
+      },
+      {
+        "month": "W5",
+        "risk": 19,
+        "workload": 40
+      },
+      {
+        "month": "W6",
+        "risk": 6,
+        "workload": 54
+      }
+    ],
+    "radarProfile": [
+      19,
+      27,
+      14,
+      79,
+      84,
+      51
+    ]
+  },
+  {
+    "id": "CRK-6446",
+    "name": "Imran Anwar",
+    "team": "BHR",
+    "role": "PACE",
+    "age": 24,
+    "avg": 23.07,
+    "sr": 7.33,
+    "rating": 8.2,
+    "injuryRisk": 74,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 9,
+        "workload": 45
+      },
+      {
+        "month": "W2",
+        "risk": 34,
+        "workload": 57
+      },
+      {
+        "month": "W3",
+        "risk": 57,
+        "workload": 64
+      },
+      {
+        "month": "W4",
+        "risk": 34,
+        "workload": 69
+      },
+      {
+        "month": "W5",
+        "risk": 74,
+        "workload": 77
+      },
+      {
+        "month": "W6",
+        "risk": 46,
+        "workload": 65
+      }
+    ],
+    "radarProfile": [
+      35,
+      34,
+      25,
+      83,
+      85,
+      74
+    ]
+  },
+  {
+    "id": "CRK-2554",
+    "name": "Kuldeep Yadav",
+    "team": "IND",
+    "role": "PACE",
+    "age": 27,
+    "avg": 13.74,
+    "sr": 6.95,
+    "rating": 8.8,
+    "injuryRisk": 57,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 57,
+        "workload": 56
+      },
+      {
+        "month": "W2",
+        "risk": 19,
+        "workload": 43
+      },
+      {
+        "month": "W3",
+        "risk": 6,
+        "workload": 54
+      },
+      {
+        "month": "W4",
+        "risk": 25,
+        "workload": 41
+      },
+      {
+        "month": "W5",
+        "risk": 38,
+        "workload": 56
+      },
+      {
+        "month": "W6",
+        "risk": 32,
+        "workload": 72
+      }
+    ],
+    "radarProfile": [
+      13,
+      15,
+      21,
+      84,
+      85,
+      68
+    ]
+  },
+  {
+    "id": "CRK-9299",
+    "name": "DJ Hawoe",
+    "team": "INA",
+    "role": "PACE",
+    "age": 36,
+    "avg": 23.02,
+    "sr": 7.18,
+    "rating": 8.4,
+    "injuryRisk": 45,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 12,
+        "workload": 51
+      },
+      {
+        "month": "W2",
+        "risk": 6,
+        "workload": 52
+      },
+      {
+        "month": "W3",
+        "risk": 45,
+        "workload": 56
+      },
+      {
+        "month": "W4",
+        "risk": 30,
+        "workload": 71
+      },
+      {
+        "month": "W5",
+        "risk": 40,
+        "workload": 59
+      },
+      {
+        "month": "W6",
+        "risk": 14,
+        "workload": 46
+      }
+    ],
+    "radarProfile": [
+      32,
+      22,
+      13,
+      90,
+      94,
+      61
+    ]
+  },
+  {
+    "id": "CRK-6143",
+    "name": "MRJ Watt",
+    "team": "SCOT",
+    "role": "PACE",
+    "age": 34,
+    "avg": 21.98,
+    "sr": 7.09,
+    "rating": 9.7,
+    "injuryRisk": 55,
+    "workloadData": [
+      {
+        "month": "W1",
+        "risk": 26,
+        "workload": 50
+      },
+      {
+        "month": "W2",
+        "risk": 49,
+        "workload": 61
+      },
+      {
+        "month": "W3",
+        "risk": 31,
+        "workload": 68
+      },
+      {
+        "month": "W4",
+        "risk": 33,
+        "workload": 57
+      },
+      {
+        "month": "W5",
+        "risk": 55,
+        "workload": 72
+      },
+      {
+        "month": "W6",
+        "risk": 52,
+        "workload": 70
+      }
+    ],
+    "radarProfile": [
+      18,
+      16,
+      15,
+      88,
+      75,
+      85
+    ]
+  }
+]
