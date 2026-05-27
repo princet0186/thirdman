@@ -2,6 +2,7 @@
 
 import AIPanel from "@/components/dashboard/AIPanel";
 import ContextTree from "@/components/dashboard/ContextTree";
+import ResizableLayout from "@/components/layout/ResizableLayout";
 import CricketField from "@/components/tactics/CricketField";
 import { Shield, Crosshair, Users, Swords, Zap, Loader2, X, Target } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -117,126 +118,123 @@ export default function TacticsPage() {
 
   const isBatThreat = selectedThreat && ["BAT", "ALL", "WK-BAT"].includes(selectedThreat.role);
 
+  const centerContent = (
+    <div className="bg-[#faf8f3] border-2 border-[#b8976a] rounded shadow-md p-3 flex-1 flex flex-col min-h-0">
+
+      {/* Header */}
+      <div className="flex justify-between items-center mb-4 border-b-2 border-[#d6c4a8] pb-3">
+        <div>
+          <h2 className="text-sm font-bold text-[#0f172a] flex items-center gap-2">
+            <Shield className="w-4 h-4 text-[#ca8a04]" /> OpponentEdge Matchup Workbench
+          </h2>
+          <p className="text-xs text-[#6b7280] mt-1">Click <b>Neutralize</b> on any threat to see the AI field placement.</p>
+        </div>
+        <div className="flex items-center gap-3 bg-[#f5f0e8] p-1.5 rounded-sm border border-[#d6c4a8]">
+          <div className="text-sm font-bold text-[#14532d] px-2">{homeTeam}</div>
+          <Swords className="w-4 h-4 text-[#ef4444]" />
+          <select value={opponentTeam} onChange={(e) => setOpponentTeam(e.target.value)}
+            className="bg-white border border-[#d6c4a8] text-sm font-bold text-[#0f172a] p-1 rounded-sm focus:outline-none focus:border-[#ca8a04]">
+            <option value="" disabled>Select opponent...</option>
+            {opponentOptions.map(t => <option key={t} value={t}>{t}</option>)}
+          </select>
+          <button onClick={handleGenerateStrategy} disabled={homeSquad.length === 0 || !opponentTeam}
+            className="ml-2 flex items-center gap-1.5 bg-[#14532d] hover:bg-[#166534] text-white px-3 py-1.5 rounded-sm text-xs font-bold transition-colors disabled:opacity-40">
+            <Zap className="w-3.5 h-3.5 text-[#ca8a04]" /> AI STRATEGY
+          </button>
+        </div>
+      </div>
+
+      {/* Two-column squad comparison */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 flex-1 min-h-0">
+        {/* Home Squad */}
+        <div className="border border-[#d6c4a8] rounded bg-[#faf8f3] p-3 flex flex-col min-h-0">
+          <h3 className="text-xs font-semibold text-[#14532d] mb-2 uppercase flex items-center gap-1.5 border-b border-[#d6c4a8] pb-2">
+            <Users className="w-3.5 h-3.5 text-[#ca8a04]" /> {homeTeam} Squad ({homeSquad.length})
+          </h3>
+          <div className="flex-1 overflow-y-auto pr-1 mt-1">
+            {loadingHome ? (
+              <div className="h-full flex items-center justify-center"><Loader2 className="w-5 h-5 text-[#166534] animate-spin" /></div>
+            ) : homeSquad.length > 0 ? (
+              <table className="w-full text-left text-xs whitespace-nowrap">
+                <thead className="bg-[#eef5e6] sticky top-0 z-10 shadow-sm">
+                  <tr>
+                    <th className="px-2 py-1 font-medium text-[#14532d]">Player</th>
+                    <th className="px-2 py-1 font-medium text-[#14532d]">Role</th>
+                    <th className="px-2 py-1 font-medium text-[#14532d] text-right">Rating</th>
+                    <th className="px-2 py-1 font-medium text-[#14532d] text-right">Risk</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#d6c4a8]">
+                  {homeSquad.map(p => (
+                    <tr key={p.id} className="hover:bg-[#f0ebe0] transition-colors">
+                      <td className="px-2 py-1 font-medium text-[#0f172a]">{p.name}</td>
+                      <td className="px-2 py-1 text-[#6b7280]">{p.role}</td>
+                      <td className="px-2 py-1 font-mono text-right text-[#166534]">{p.rating.toFixed(1)}</td>
+                      <td className={`px-2 py-1 font-mono text-right font-bold ${p.injuryRisk > 60 ? 'text-[#ef4444]' : p.injuryRisk > 30 ? 'text-[#ca8a04]' : 'text-[#166534]'}`}>{p.injuryRisk}%</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ) : (
+              <div className="h-full flex items-center justify-center text-xs text-[#b8976a] font-mono text-center p-4">No players for {homeTeam}.</div>
+            )}
+          </div>
+        </div>
+
+        {/* Opponent Threats */}
+        <div className="border border-[#d6c4a8] rounded bg-[#fef2f2] p-3 flex flex-col min-h-0 border-t-2 border-t-[#ef4444]">
+          <h3 className="text-xs font-semibold text-[#ef4444] mb-2 uppercase flex items-center gap-1.5 border-b border-[#fca5a5] pb-2">
+            <Crosshair className="w-3.5 h-3.5 text-[#ef4444]" /> {opponentTeam || "Opponent"} Threats ({opponentSquad.length})
+          </h3>
+          <div className="flex-1 overflow-y-auto pr-1 mt-1">
+            {loadingOpponent ? (
+              <div className="h-full flex items-center justify-center"><Loader2 className="w-5 h-5 text-[#ef4444] animate-spin" /></div>
+            ) : opponentSquad.length > 0 ? (
+              <table className="w-full text-left text-xs whitespace-nowrap">
+                <thead className="bg-[#fee2e2] sticky top-0 z-10 shadow-sm">
+                  <tr>
+                    <th className="px-2 py-1 font-medium text-[#991b1b]">Player</th>
+                    <th className="px-2 py-1 font-medium text-[#991b1b]">Role</th>
+                    <th className="px-2 py-1 font-medium text-[#991b1b] text-right">Rating</th>
+                    <th className="px-2 py-1 font-medium text-[#991b1b]">Action</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#fca5a5]">
+                  {opponentSquad.map(p => (
+                    <tr key={p.id} className="hover:bg-[#fecaca] transition-colors">
+                      <td className="px-2 py-1 font-medium text-[#7f1d1d]">{p.name}</td>
+                      <td className="px-2 py-1 text-[#991b1b]">{p.role}</td>
+                      <td className="px-2 py-1 font-mono text-right text-[#ef4444] font-bold">{p.rating.toFixed(1)}</td>
+                      <td className="px-2 py-1">
+                        <button onClick={() => handleNeutralize(p)}
+                          className="flex items-center gap-1 bg-[#7f1d1d] hover:bg-[#991b1b] text-white px-2 py-0.5 rounded-sm text-[10px] font-bold transition-colors">
+                          <Target className="w-3 h-3" /> Neutralize
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ) : (
+              <div className="h-full flex items-center justify-center text-xs text-[#ef4444] font-mono p-4 text-center">
+                {opponentTeam ? `Loading ${opponentTeam}...` : "Select an opponent."}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
-    <div className="h-full flex gap-2">
-      <div className="w-64 bg-[#faf8f3] border-2 border-[#b8976a] rounded flex flex-col flex-shrink-0 shadow-md overflow-hidden">
-        <div className="h-8 border-b-2 border-[#ca8a04] bg-gradient-to-r from-[#14532d] to-[#166534] flex items-center px-3 text-xs font-semibold text-white uppercase tracking-wider">
-          OpponentEdge Context
-        </div>
-        <div className="flex-1 overflow-y-auto"><ContextTree /></div>
-      </div>
-
-      <div className="flex-1 flex flex-col gap-2 min-w-0 min-h-0">
-        <div className="bg-[#faf8f3] border-2 border-[#b8976a] rounded shadow-md p-3 flex-1 flex flex-col min-h-0">
-
-          {/* Header */}
-          <div className="flex justify-between items-center mb-4 border-b-2 border-[#d6c4a8] pb-3">
-            <div>
-              <h2 className="text-sm font-bold text-[#0f172a] flex items-center gap-2">
-                <Shield className="w-4 h-4 text-[#ca8a04]" /> OpponentEdge Matchup Workbench
-              </h2>
-              <p className="text-xs text-[#6b7280] mt-1">Click <b>Neutralize</b> on any threat to see the AI field placement.</p>
-            </div>
-            <div className="flex items-center gap-3 bg-[#f5f0e8] p-1.5 rounded-sm border border-[#d6c4a8]">
-              <div className="text-sm font-bold text-[#14532d] px-2">{homeTeam}</div>
-              <Swords className="w-4 h-4 text-[#ef4444]" />
-              <select value={opponentTeam} onChange={(e) => setOpponentTeam(e.target.value)}
-                className="bg-white border border-[#d6c4a8] text-sm font-bold text-[#0f172a] p-1 rounded-sm focus:outline-none focus:border-[#ca8a04]">
-                <option value="" disabled>Select opponent...</option>
-                {opponentOptions.map(t => <option key={t} value={t}>{t}</option>)}
-              </select>
-              <button onClick={handleGenerateStrategy} disabled={homeSquad.length === 0 || !opponentTeam}
-                className="ml-2 flex items-center gap-1.5 bg-[#14532d] hover:bg-[#166534] text-white px-3 py-1.5 rounded-sm text-xs font-bold transition-colors disabled:opacity-40">
-                <Zap className="w-3.5 h-3.5 text-[#ca8a04]" /> AI STRATEGY
-              </button>
-            </div>
-          </div>
-
-          {/* Two-column squad comparison */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 flex-1 min-h-0">
-            {/* Home Squad */}
-            <div className="border border-[#d6c4a8] rounded bg-[#faf8f3] p-3 flex flex-col min-h-0">
-              <h3 className="text-xs font-semibold text-[#14532d] mb-2 uppercase flex items-center gap-1.5 border-b border-[#d6c4a8] pb-2">
-                <Users className="w-3.5 h-3.5 text-[#ca8a04]" /> {homeTeam} Squad ({homeSquad.length})
-              </h3>
-              <div className="flex-1 overflow-y-auto pr-1 mt-1">
-                {loadingHome ? (
-                  <div className="h-full flex items-center justify-center"><Loader2 className="w-5 h-5 text-[#166534] animate-spin" /></div>
-                ) : homeSquad.length > 0 ? (
-                  <table className="w-full text-left text-xs whitespace-nowrap">
-                    <thead className="bg-[#eef5e6] sticky top-0 z-10 shadow-sm">
-                      <tr>
-                        <th className="px-2 py-1 font-medium text-[#14532d]">Player</th>
-                        <th className="px-2 py-1 font-medium text-[#14532d]">Role</th>
-                        <th className="px-2 py-1 font-medium text-[#14532d] text-right">Rating</th>
-                        <th className="px-2 py-1 font-medium text-[#14532d] text-right">Risk</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-[#d6c4a8]">
-                      {homeSquad.map(p => (
-                        <tr key={p.id} className="hover:bg-[#f0ebe0] transition-colors">
-                          <td className="px-2 py-1 font-medium text-[#0f172a]">{p.name}</td>
-                          <td className="px-2 py-1 text-[#6b7280]">{p.role}</td>
-                          <td className="px-2 py-1 font-mono text-right text-[#166534]">{p.rating.toFixed(1)}</td>
-                          <td className={`px-2 py-1 font-mono text-right font-bold ${p.injuryRisk > 60 ? 'text-[#ef4444]' : p.injuryRisk > 30 ? 'text-[#ca8a04]' : 'text-[#166534]'}`}>{p.injuryRisk}%</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                ) : (
-                  <div className="h-full flex items-center justify-center text-xs text-[#b8976a] font-mono text-center p-4">No players for {homeTeam}.</div>
-                )}
-              </div>
-            </div>
-
-            {/* Opponent Threats */}
-            <div className="border border-[#d6c4a8] rounded bg-[#fef2f2] p-3 flex flex-col min-h-0 border-t-2 border-t-[#ef4444]">
-              <h3 className="text-xs font-semibold text-[#ef4444] mb-2 uppercase flex items-center gap-1.5 border-b border-[#fca5a5] pb-2">
-                <Crosshair className="w-3.5 h-3.5 text-[#ef4444]" /> {opponentTeam || "Opponent"} Threats ({opponentSquad.length})
-              </h3>
-              <div className="flex-1 overflow-y-auto pr-1 mt-1">
-                {loadingOpponent ? (
-                  <div className="h-full flex items-center justify-center"><Loader2 className="w-5 h-5 text-[#ef4444] animate-spin" /></div>
-                ) : opponentSquad.length > 0 ? (
-                  <table className="w-full text-left text-xs whitespace-nowrap">
-                    <thead className="bg-[#fee2e2] sticky top-0 z-10 shadow-sm">
-                      <tr>
-                        <th className="px-2 py-1 font-medium text-[#991b1b]">Player</th>
-                        <th className="px-2 py-1 font-medium text-[#991b1b]">Role</th>
-                        <th className="px-2 py-1 font-medium text-[#991b1b] text-right">Rating</th>
-                        <th className="px-2 py-1 font-medium text-[#991b1b]">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-[#fca5a5]">
-                      {opponentSquad.map(p => (
-                        <tr key={p.id} className="hover:bg-[#fecaca] transition-colors">
-                          <td className="px-2 py-1 font-medium text-[#7f1d1d]">{p.name}</td>
-                          <td className="px-2 py-1 text-[#991b1b]">{p.role}</td>
-                          <td className="px-2 py-1 font-mono text-right text-[#ef4444] font-bold">{p.rating.toFixed(1)}</td>
-                          <td className="px-2 py-1">
-                            <button onClick={() => handleNeutralize(p)}
-                              className="flex items-center gap-1 bg-[#7f1d1d] hover:bg-[#991b1b] text-white px-2 py-0.5 rounded-sm text-[10px] font-bold transition-colors">
-                              <Target className="w-3 h-3" /> Neutralize
-                            </button>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                ) : (
-                  <div className="h-full flex items-center justify-center text-xs text-[#ef4444] font-mono p-4 text-center">
-                    {opponentTeam ? `Loading ${opponentTeam}...` : "Select an opponent."}
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="w-[340px] bg-[#faf8f3] border-2 border-[#b8976a] rounded flex flex-col flex-shrink-0 shadow-md">
-        <AIPanel />
-      </div>
+    <>
+      <ResizableLayout
+        storageKey="tactics"
+        leftTitle="OpponentEdge Context"
+        left={<ContextTree />}
+        right={<AIPanel />}
+        center={centerContent}
+      />
 
       {/* ===== NEUTRALIZE MODAL ===== */}
       {selectedThreat && (
@@ -337,6 +335,6 @@ export default function TacticsPage() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
