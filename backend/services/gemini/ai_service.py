@@ -53,9 +53,13 @@ Your job is to:
    - Compare them briefly in the context of the current dashboard.
    - Mention their specific stats (like Average, Strike Rate, or Injury Risk) and why it fits the archetype the user asked for.
    - If they aren't perfect fits, explain what compromises were made.
-2. Suggest 2 highly relevant, human-like follow-up actions a coach might want to ask next, based specifically on these found players and the CURRENT DASHBOARD CONTEXT. (e.g. if in Injury dashboard: "Find safe low-risk replacements for Bumrah"). Make them sound like a natural conversation continuation.
+2. Optionally suggest 0 to 3 highly relevant, human-like follow-up actions a coach might want to ask next, based specifically on these found players and the CURRENT DASHBOARD CONTEXT. 
+   - ONLY suggest actions that are genuinely useful and naturally continue the conversation.
+   - If the query is self-contained and no follow-up makes sense, return an EMPTY actions list [].
+   - If only 1 action is relevant, return just 1. Never pad with filler actions.
+   - Examples: if in Injury dashboard: "Find safe low-risk replacements for Bumrah". If in Tactics: "Simulate Powerplay matchups".
 
-Return your response as JSON matching the schema, with `insights` containing your detailed paragraph, and `actions` containing the list of 2 strings.
+Return your response as JSON matching the schema, with `insights` containing your detailed paragraph, and `actions` containing the list of 0-3 strings (or an empty list if no follow-ups are relevant).
 """
 
     def _call_content(api_key: str):
